@@ -7,8 +7,8 @@ const prefix = '&';
 /* Lancement du Bot */
 bot.on('ready', () => {
     console.log('Bot activé')
-    bot.user.seStatus('dnd')//Choisissez entre: 'Online', 'Idle', 'Invisible' et 'dnd'
-    bot.user.setGame("s'autocréer")
+    //bot.user.seStatus('dnd')//Choisissez entre: 'Online', 'Idle', 'Invisible' et 'dnd'
+    bot.user.setGame('découvrir le monde !')
 });
 
 /* Message de Bienvenue */
