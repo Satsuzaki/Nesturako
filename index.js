@@ -3,11 +3,11 @@ const Discord = require('discord.js')
 const bot = new Discord.Client()
 const prefix = '&';
 
+
 /* Lancement du Bot */
 bot.on('ready', () => {
     console.log('Bot activé')
-    //bot.user.setStatus('dnd')//Choisissez entre: 'Online', 'Idle', 'Invisible' et 'dnd'
-    bot.user.setGame('découvrir le monde !')
+    bot.user.setGame('découvrir le monde')
 });
 
 /* Message de Bienvenue */
@@ -152,8 +152,5 @@ bot.on("message", function(message) {
     }
 })
 
-bot.on('message', msg => {
-	if (!msg.content.startsWith(prefix)) return;
-	if (commands.hasOwnProperty(msg.content.toLowerCase().slice(prefix.length).split(' ')[0])) commands[msg.content.toLowerCase().slice(prefix.length).split(' ')[0]](msg);
-});
+
 bot.login(process.env.TOKEN);
