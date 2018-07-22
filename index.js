@@ -3,6 +3,13 @@ const Discord = require('discord.js')
 const bot = new Discord.Client()
 const prefix = '&';
 
+/* Lancement du Bot */
+bot.on('ready', () => {
+    console.log('Bot activé')
+    //bot.user.setStatus('dnd')//Choisissez entre: 'Online', 'Idle', 'Invisible' et 'dnd'
+    bot.user.setGame('découvrir le monde !')
+});
+
 /* Message de Bienvenue */
 bot.on('guildMemberAdd', member => {
     console.log('User ' + member.user.username + ' a rejoint le serveur!')
@@ -144,13 +151,6 @@ bot.on("message", function(message) {
         message.channel.sendEmbed(embed) 
     }
 })
-
-/* Lancement du Bot */
-bot.on('ready', () => {
-    console.log('Bot activé')
-    //bot.user.setStatus('dnd')//Choisissez entre: 'Online', 'Idle', 'Invisible' et 'dnd'
-    bot.user.setGame('découvrir le monde !')
-});
 
 bot.on('message', msg => {
 	if (!msg.content.startsWith(prefix)) return;
