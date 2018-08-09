@@ -145,6 +145,23 @@ bot.on("message", function(message) {
         .addField("__Utilisateur sur le discord:__ ", message.guild.memberCount)
         .setColor("#00008B")
         message.channel.sendEmbed(embed) 
+   break;
+    case "rrct":
+        const embed = new Discord.RichEmbed()
+        .setDescription ("**__Intégrez 2 Club (max)__**")
+        .addField("__Club otaku:__ ", ":japan:")
+        .addField("__Club du jeu-vidéo:__ ", ":video_game:")
+        .addField("__Club de rôleplay:__ ", ":scroll:")
+        .addField("__Club du cinéma:__ ", ":clapper:")
+        .addField("__Club nature:__ ", ":sunrise_over_mountains:")
+        .addField("__Club de musique:__ ", ":musical_keyboard: ")
+        .addField("__Club d'art:__ ", ":art:")
+        .addField("__Club sportif:__ ", ":soccer:")
+        .addField("__Club de spammer:__ ", ":no_entry:")
+        .addField("__Etudiant:__ ", ":triangular_ruler:")
+        .setColor("#32ca2b")
+        message.channel.sendEmbed(embed)
+    break;
     }
 })
  /* Token */
