@@ -148,13 +148,6 @@ bot.on("message", function(message) {
         .addField("__Utilisateur sur le discord:__ ", message.guild.memberCount)
         .setColor("#00008B")
         message.channel.sendEmbed(embed)
-    case "flip":
-        var result = Math.floor((Math.random() * 2) + 1);
-        if (result == 1) {
-            bot.reply(message, "The coin landed on heads");
-        } else if (result == 2) {
-            bot.reply(message, "The coin landed on tails");
-        }
     }
 })
 
