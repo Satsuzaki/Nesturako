@@ -149,9 +149,10 @@ bot.on("message", function(message) {
         .addField("Tu as rejoins le ", message.member.joinedAt)
         .addField("__Utilisateur sur le discord:__ ", message.guild.memberCount)
         .setColor("#00008B")
-        message.channel.sendEmbed(embed) 
+        message.channel.sendEmbed(embed)
+    
     }
 })
 
 /* Token */
-bot.login(config.token)
+bot.login(process.env.TOKEN)
