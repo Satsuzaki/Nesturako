@@ -1,7 +1,9 @@
 /* Annonce des constances */
 const Discord = require('discord.js')
 const bot = new Discord.Client()
+const config = require('./config.json');
 const prefix = '&';
+
 
 /* Lancement du Bot */
 bot.on('ready', () => {
@@ -147,9 +149,9 @@ bot.on("message", function(message) {
         .addField("Tu as rejoins le ", message.member.joinedAt)
         .addField("__Utilisateur sur le discord:__ ", message.guild.memberCount)
         .setColor("#00008B")
-        message.channel.sendEmbed(embed)
+        message.channel.sendEmbed(embed) 
     }
 })
 
-
-bot.login(process.env.TOKEN);
+/* Token */
+bot.login(config.token)
