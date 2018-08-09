@@ -89,6 +89,15 @@ bot.on("message", function(message) {
             message.channel.send(btmsg);
         }
         break;
+        /*case "info":
+            const embed = new Discord.RichEmbed()
+            .setDescription ("**Information du Discord**")
+            .addField("__Nom du discord:__ ", message.guild.name)
+            .addField("Créer le ", "13 Décembre 2017")
+            .addField("Tu as rejoins le ", message.member.joinedAt)
+            .addField("__Utilisateur sur le discord:__ ", message.guild.memberCount)
+            .setColor("#00008B")
+            message.channel.sendEmbed(embed)*/
         case "desc":
         if (message.author.id === "213322033692409857") {
             message.delete().catch();
@@ -123,7 +132,8 @@ bot.on("message", function(message) {
         break;
         case "invit":
             message.channel.send('https://discord.gg/9Hy94Y4');
-        break; 
+        break;
+        
     }
 })
 bot.on("message", function(message) {
@@ -139,9 +149,10 @@ bot.on("message", function(message) {
         .addField("Tu as rejoins le ", message.member.joinedAt)
         .addField("__Utilisateur sur le discord:__ ", message.guild.memberCount)
         .setColor("#00008B")
-        message.channel.sendEmbed(embed)
+        message.channel.sendEmbed(embed) 
     }
 })
+
 
 /* Token */
 bot.login(process.env.TOKEN)
