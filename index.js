@@ -33,7 +33,7 @@ bot.on("message", function(message) {
             .setFooter('Réagissez par ✅ ou ❌!')
             .setColor('#8B0000')
             
-            message.guild.channels.find("id", "468159908953456650").sendEmbed(embed)
+            message.guild.channels.find("id", "480075582340595744").sendEmbed(embed)
             .then(function (message){
             message.react("✅")
             message.react("❌")
