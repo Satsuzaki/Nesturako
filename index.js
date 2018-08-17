@@ -5,7 +5,7 @@ const prefix = '&';
  /* Lancement du Bot */
 bot.on('ready', () => {
     console.log('Bot activé')
-    bot.user.setGame('découvrir le monde 🌍 ')
+    bot.user.setGame('découvrir le monde')
 });
  /* Message de Bienvenue */
 bot.on('guildMemberAdd', member => {
