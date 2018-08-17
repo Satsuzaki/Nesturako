@@ -154,7 +154,7 @@ bot.on("message", function(message) {
     switch (args[0].toLowerCase()) {
     case "rrct":
         const embed = new Discord.RichEmbed()
-        .setTitle ("**__Intégrez 2 Clubs (max)__**")
+        .setTitle ("Intégrez 2 Clubs (max)")
         .addField("- Club Otaku:", ":japan:")
         .addField("- Club du Jeux-vidéo:", ":video_game:")
         .addField("- Club Rôleplay:", ":scroll:")
