@@ -31,7 +31,7 @@ bot.on("message", function(message) {
             .setDescription("**Sondage**")
             .addField("Question: ", tte)
             .setFooter('Réagissez par ✅ ou ❌!')
-            .setColor('#8B0000')
+            .setColor('#FF800D')
             
             message.guild.channels.find("id", "480075582340595744").sendEmbed(embed)
             .then(function (message){
@@ -58,7 +58,7 @@ bot.on("message", function(message) {
             .addField('Règle 10: ', `:exclamation: Définitif: Demander à rejoindre un club (2 maximum) auprès des membres du conseil.`)
             .addField('Proposition: ', `Sachez que vous pouvez signaler tout comportement qui vous semble contraire aux Règles ou n'importe quel autre problème en contactant directement à un <@&462954827652136980> ou bien un membre du conseil par message privé.`)
             .setFooter(`PS: Les règles sont sujettes à adaptations et changements dans le futur, si vous avez une quelconque suggestion sur celle-ci. Faites en part par message privé au membre du conseil, merci.`)
-            .setColor('#D9C400')
+            .setColor('#8B0000')
             message.guild.channels.find("id", "462927679533088768").sendEmbed(embed)
         } else {
             message.channel.send('Pas la permission') 
@@ -70,7 +70,7 @@ bot.on("message", function(message) {
                 .setDescription("**__Conseils__**")
                 .addField('Conseil 1: ', `N'hésitez pas à mute les channels tel que le channel <#462960550641664011>/<#464056141740245012>.`)
                 .setFooter(`PS: Si vous souhaitez proposer d'autres conseils pour aider la communauté et le serveur. Faites en part par message privé au membre du conseil, merci.`)
-                .setColor('#D9C400')
+                .setColor('#8B0000')
                 message.guild.channels.find("id", "462927679533088768").sendEmbed(embed)
             } else {
                 message.channel.send('Pas la permission') 
@@ -84,15 +84,6 @@ bot.on("message", function(message) {
             message.channel.send(btmsg);
         }
         break;
-        /*case "info":
-            const embed = new Discord.RichEmbed()
-            .setDescription ("**Information du Discord**")
-            .addField("__Nom du discord:__ ", message.guild.name)
-            .addField("Créer le ", "13 Décembre 2017")
-            .addField("Tu as rejoins le ", message.member.joinedAt)
-            .addField("__Utilisateur sur le discord:__ ", message.guild.memberCount)
-            .setColor("#00008B")
-            message.channel.sendEmbed(embed)*/
         case "desc":
         if (message.author.id === "213322033692409857") {
             message.delete().catch();
@@ -106,7 +97,7 @@ bot.on("message", function(message) {
             .addField("Invitation: ", "<prefix>invit")
             .addField("Information: ", "<prefix>info")
             .addField("Ping: ", "<prefix>ping")
-            .setColor("#00008B")
+            .setColor("#D9C400")
             message.channel.sendEmbed(embed)
         break;
         case "ahelp":
@@ -119,7 +110,7 @@ bot.on("message", function(message) {
             .addField("Ping: ", "<prefix>ping")
             .addField("Say: ", "<prefix>say")
             .addField("Sondage: ", "<prefix>poll + <question>")
-            .setColor("#00008B")
+            .setColor("#D9C400")
             message.channel.sendEmbed(embed)
         } else {
             message.channel.send('Pas la permission')
@@ -143,7 +134,7 @@ bot.on("message", function(message) {
         .addField("Créer le ", "13 Décembre 2017")
         .addField("Tu as rejoins le ", message.member.joinedAt)
         .addField("__Utilisateur sur le discord:__ ", message.guild.memberCount)
-        .setColor("#00008B")
+        .setColor("#D9C400")
         message.channel.sendEmbed(embed) 
     }
 })
@@ -164,7 +155,7 @@ bot.on("message", function(message) {
         .addField("__Club sportif:__ ", "- :soccer:")
         .addField("__Club de spammer:__ ", "- :no_entry:")
         .addField("__Etudiant:__ ", "- :triangular_ruler:")
-        .setColor("#32ca2b")
+        .setColor("#75D6FF")
         message.channel.sendEmbed(embed)
       }
 })
@@ -175,12 +166,18 @@ bot.on("message", function(message) {
     switch (args[0].toLowerCase()) {  
     case "tebd":
         const embed = new Discord.RichEmbed()
-        .setTitle("**Choix de Club**")
         .addField('__Club otaku:__', "  :japan:", true)
-        .addField('__Club du jeu-vidéo:__', "   :video_game:", true)
-        .addField('__Club de rôleplay:__', "    :scroll:", true)
-        .addField('__Club du cinéma:__', "  :clapper:", true)
-        .setColor("#32ca2b")
+        .addField('__Club du jeu-vidéo:__', ":video_game:", true)
+        .addField('__Club de rôleplay:__', ":scroll:", true)
+        .addField('__Club du cinéma:__', ":clapper:", true)
+        .addField('__Club nature:__', ":sunrise_over_mountains:", true)
+        .addField('__Club de musique:__' , ":musical_keyboard: ", true)
+        .addField("__Club d'art:__" , ":art:", true)
+        .addField('__Club sportif:__', ":soccer:", true)
+        .addField('__Club de spammer:__', ":no_entry:", true)
+        .addField('__Etudiant:__', "- :triangular_ruler:",true )
+        .setFooter(':exclamation: Rejoignez que 2 clubs maximum :exclamation:')
+        .setColor("#75D6FF")
         message.channel.sendEmbed(embed)
     }
 })
