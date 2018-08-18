@@ -175,7 +175,7 @@ bot.on("message", function(message) {
         .addField("__Club d'art:__" , ":art:", true)
         .addField('__Club sportif:__', ":soccer:", true)
         .addField('__Club de spammer:__', ":no_entry:", true)
-        .addField('__Etudiant:__', "- :triangular_ruler:",true )
+        .addField('__Etudiant:__', ":triangular_ruler:",true )
         .setFooter('❗️ Rejoignez que 2 clubs maximum ❗️')
         .setColor("#75D6FF")
         message.channel.sendEmbed(embed)
