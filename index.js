@@ -166,7 +166,13 @@ bot.on("message", function(message) {
         .addField("__Etudiant:__ ", "- :triangular_ruler:")
         .setColor("#32ca2b")
         message.channel.sendEmbed(embed)
-    break;
+      }
+})
+bot.on("message", function(message) {
+    if (message.author.equals(bot.user)) return;
+    if (!message.content.startsWith(prefix)) return;
+    var args = message.content.substring(prefix.length).split(" ");
+    switch (args[0].toLowerCase()) {  
     case "tebd":
         const embed = new Discord.RichEmbed()
         .setTitle("Choix de Club")
