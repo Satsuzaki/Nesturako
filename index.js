@@ -143,7 +143,7 @@ bot.on("message", function(message) {
     if (!message.content.startsWith(prefix)) return;
     var args = message.content.substring(prefix.length).split(" ");
     switch (args[0].toLowerCase()) {
-    case "rrct":
+    case "jfk":
         const embed = new Discord.RichEmbed()
         .addField("__Club otaku:__ ", "- :japan:")
         .addField("__Club du jeu-vidéo:__ ", "- :video_game:")
@@ -154,7 +154,7 @@ bot.on("message", function(message) {
         .addField("__Club d'art:__ ", "- :art:")
         .addField("__Club sportif:__ ", "- :soccer:")
         .addField("__Club de spammer:__ ", "- :no_entry:")
-        .addField("__Etudiant:__ ", "- :triangular_ruler:")
+        .addField("__Etudiant:__ ", ":triangular_ruler:")
         .setColor("#75D6FF")
         message.channel.sendEmbed(embed)
       }
@@ -164,7 +164,7 @@ bot.on("message", function(message) {
     if (!message.content.startsWith(prefix)) return;
     var args = message.content.substring(prefix.length).split(" ");
     switch (args[0].toLowerCase()) {  
-    case "tebd":
+    case "clubrole":
         const embed = new Discord.RichEmbed()
         .addField('__Club otaku:__', "  :japan:", true)
         .addField('__Club du jeu-vidéo:__', ":video_game:", true)
