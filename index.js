@@ -176,10 +176,10 @@ bot.on("message", function(message) {
     case "tebd":
         const embed = new Discord.RichEmbed()
         .setTitle("**Choix de Club**")
-        .addField('__Club otaku:__', ":japan:", true)
-        .addField('__Club du jeu-vidéo:__', ":video_game:", true)
-        .addField('__Club de rôleplay:__', ":scroll:", true)
-        .addField('__Club du cinéma:__', ":clapper:", true)
+        .addField('__Club otaku:__', "  :japan:", true)
+        .addField('__Club du jeu-vidéo:__', "   :video_game:", true)
+        .addField('__Club de rôleplay:__', "    :scroll:", true)
+        .addField('__Club du cinéma:__', "  :clapper:", true)
         .setColor("#32ca2b")
         message.channel.sendEmbed(embed)
     }
