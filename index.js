@@ -166,9 +166,9 @@ bot.on("message", function(message) {
         .addField("__Etudiant:__ ", "- :triangular_ruler:")
         .setColor("#32ca2b")
         message.channel.sendEmbed(embed)
-    break
+    break;
     case "tebd":
-        const embed = new Discord.MessageEmbed()
+        const embed = new Discord.RichEmbed()
         .setTitle("Choix de Club")
         .setDescription(':exclamation: Rejoignez que 2 clubs maximum :exclamation:')
         .addField('__Club otaku:__', ":japan:", true)
