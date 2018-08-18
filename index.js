@@ -175,11 +175,9 @@ bot.on("message", function(message) {
     switch (args[0].toLowerCase()) {  
     case "tebd":
         const embed = new Discord.RichEmbed()
-        .setTitle("Choix de Club")
-        .setDescription(':exclamation: Rejoignez que 2 clubs maximum :exclamation:')
+        .setTitle("**Choix de Club**")
         .addField('__Club otaku:__', ":japan:", true)
         .addField('__Club du jeu-vidéo:__', ":video_game:", true)
-        .addBlankField()
         .addField('__Club de rôleplay:__', ":scroll:", true)
         .addField('__Club du cinéma:__', ":clapper:", true)
         .setColor("#32ca2b")
