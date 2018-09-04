@@ -417,6 +417,7 @@ bot.on("message", function(message) {
     var args = message.content.substring(prefix.length).split(" ");
     switch (args[0].toLowerCase()) {  
     case "roleclub":
+    if (message.author.id === "213322033692409857") {
         const embed = new Discord.RichEmbed()
         .addField('__Club otaku:__', "  :japan:", true)
         .addField('__Club du jeu-vidéo:__', ":video_game:", true)
@@ -431,6 +432,26 @@ bot.on("message", function(message) {
         .setFooter('❗️ Rejoignez que 2 clubs maximum ❗️')
         .setColor("#75D6FF")
         message.guild.channels.find("id", "468159908953456650").sendEmbed(embed)
+        } else {
+            message.channel.send('Pas la permission')
+        }
+        break;
+        case "invit":
+            message.channel.send('https://discord.gg/9Hy94Y4');
+        break;
+    case "rolespec":
+    if (message.author.id === "213322033692409857") {
+        const embed = new Discord.RichEmbed()
+        .addField('__**Love**__', ":heart:", true)
+        .addField('__**Belge**__', ":fries:", true)
+        .addField('__**Français**__', ":french_bread:", true)
+        .setFooter('❗️ Rejoignez que 2 clubs maximum ❗️')
+        .setColor("#75D6FF")
+        message.guild.channels.find("id", "462923863995580416").sendEmbed(embed)
+        } else {
+            message.channel.send('Pas la permission')
+        }
+        break;
     }
 })
    
