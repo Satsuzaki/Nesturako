@@ -51,6 +51,9 @@ bot.on("message", function(message) {
             "footer": {
                 "text": "PS: Les règles sont sujettes à adaptations et changements dans le futur, si vous avez une quelconque suggestion sur celle-ci. Faites en part par message privé au membre du conseil, merci."
             },
+            "thumbnail": {
+                "url": "https://imgur.com/a/6cXSjCU"
+            },
             "fields": [
                 {
                 "name": ":white_small_square:__Les règles générales (s’appliquent en vocal et à l’écrit)__",
@@ -69,60 +72,154 @@ bot.on("message", function(message) {
                 "value": "Sont proscrits les types de publicité suivantes:                                              • Vers d’autres serveurs discord.                                                                       • Pour vos serveurs de jeu (si la demande n'a pas été accepté par un membre du conseil).                                                                                              • En message privé si elle n’est pas sollicitée par la personne recevant le message."
                 }
             ]};
-           
             message.guild.channels.find("id", "462927679533088768").sendEmbed(embed)
         } else {
             message.channel.send('Pas la permission') 
         }
         break;
-        case "inforole":
+        case "infoclasse":
         if (message.author.id === "213322033692409857") {
         const embed = {
-            "title": ":video_game: __**Rôles**__ :art:",
-                "description": "Voici quelques explications sur les rôles qui compose les différentes permissions/récompenses disponible sur le serveur",
+        "description": "Voici quelques explications sur les classe qui compose notre lycée",                
                 "color": 7722751,
-                "footer": {
-                    "text": "PS: De futurs rôles spéciaux feront certainement leur apparition."
-            },
                 "fields": [
                     {
-                    "name": ":white_small_square:__Les classes__",
-                    "value": "• Classe-E: Classe du début (peu de permission)", 
-                    "value": "• Classe-D: Lvl 5 (possibilité d'aller à l'extérieur du lycée)",
-                    "value": "• Classe-C: Lvl 10 (accès au <#468462827838111772>)",
-                    "value": "• Classe-B: Lvl 15 (accès à des rôles spéciaux)",
-                    "value": "• Classe-A: Lvl 20 (permission à venir)",
-                    "value": "• Classe-S: Lvl 30 (rentrée non-obligatoire au Conseil de discipline)"
+                    "name": "__📘 Classe-E__",
+                    "value": "• Classe du début (peu de permission)"
                     },
                     {
-                    "name": ":white_small_square:__Les clubs__",
-                    "value": "• Otaku: Pour tous les Otakus",
-                    "value": "• Gamer: Pour toutes les personnes cherchant des potes pour jouer",              
-                    "value": "• Rôleplayer: Si vous aimez les rencontres Rp. A vous de créez",
-                    "value": "• Cinéphile: Pour tous les mordus du 7ème Art",
-                    "value": "• Naturologue: Si vous attachez une importance à la nature (zoologie, herbologie, ...)",
-                    "value": "• Musicien: Venez partager vos musiques préférées, voir même vos créations",
-                    "value": "• Artiste: Vous aimez les dessins, la peinture, ce club est fait pour vous",
-                    "value": "• Sportif: Pour les commentateurs/chroniqueurs en herbe",
-                    "value": "• Spammeur: Spammez à votre guise (**vous ne gagnez pas d'xp dans votre channel**)"
+                    "name": "__📙 Classe-D__",
+                    "value": "• Lvl 5 (possibilité d'aller à l'extérieur du lycée)"
                     },
                     {
-                    "name": ":white_small_square:__Rôles importants__",
-                    "value": "• Animateur: Lvl 35 (création d'event temporaire)",
-                    "value": "• Organisateur: Lvl 40 (création d'event & membre du Conseil)",                          
-                    "value": "• Surveillant: Modérateur des channels vocal/textuel (membre du Comité)",
-                    "value": "• Conseiller/Trésorier/Vice-président/Président: Staff (membre officiel du Conseil)"
+                    "name": "__📗 Classe-C__",
+                    "value": "• Lvl 10 (accès au <#468462827838111772>)"
                     },
                     {
-                    "name": ":white_small_square:__Rôles spéciaux__",
-                    "value": "• Love: Un amour en tête ?",
-                    "value": "• Français: Pour tous les Bleu, blanc, rouge",
-                    "value": "• Belge: Parce qu'on ne mange pas que des frites (pas tout le temps)",
-                    "value": "• Etudiant: Si vous cherchez des conseils, de l'aide pour vos études"
+                    "name": "__📕 Classe-B__",
+                    "value": "• Lvl 15 (accès à des rôles spéciaux)"
+                    },
+                    {
+                    "name": "__📒 Classe-A__",
+                    "value": "• Lvl 20 (permission à venir)"
+                    },
+                    {
+                    "name": "__📓 Classe-S__",
+                    "value": "• Lvl 30 (rentrée non-obligatoire au Conseil de discipline)"
+                }
+            ]
+        };
+        message.guild.channels.find("id", "462927679533088768").sendEmbed(embed)
+        } else {
+            message.channel.send('Pas la permission') 
+        }
+        break;
+        case "infoclub":
+        if (message.author.id === "213322033692409857") {
+        const embed = {
+            "description": "Voici quelques explications sur les clubs présent dans notre lycée",
+            "color": 7722751,
+            "fields": [
+                {
+                "name": "__🗾 Otaku__",
+                "value": "• Pour tous les Otakus"
+                },
+                {
+                "name": "__🎮 Gamer__",
+                "value": "• Pour toutes les personnes cherchant des potes pour jouer"
+                },
+                {
+                "name": "__📜 Rôleplayer__",
+                "value": "• Si vous aimez les rencontres Rp. A vous de créez"
+                },
+                {
+                "name": "__🎬 Cinéphile__",
+                "value": "• Pour tous les mordus du 7ème Art"
+                },
+                {
+                "name": "__🌄Naturologue__",
+                "value": "• Si vous attachez une importance à la nature (zoologie, herbologie, ...)"
+                },
+                {
+                "name": "__🎹 Musicien__",
+                "value": "• Venez partager vos musiques préférées, voir même vos créations"
+                },
+                {
+                "name": "__🎨 Artiste__",
+                "value": "• Vous aimez les dessins, la peinture, ce club est fait pour vous"
+                },
+                {
+                "name": "__⚽ Sportif__",
+                "value": "• Pour les commentateurs/chroniqueurs en herbe"
+                },
+                {
+                "name": "__⛔ Spammer__",
+                "value": "• Spammez à votre guise (**vous ne gagnez pas d'xp dans votre channel**)"
+                },
+                {
+                "name": "__📐 Etudiant__",
+                "value": "• Si vous cherchez des conseils, de l'aide pour vos études"
+                }
+            ]
+        };
+        message.guild.channels.find("id", "462927679533088768").sendEmbed(embed)
+        } else {
+            message.channel.send('Pas la permission') 
+        }
+        break;
+        case "infoimp":
+        if (message.author.id === "213322033692409857") {
+        const embed = {
+            "description": "Voici les personnes importantes du lycée",
+            "color": 7722751,
+            "fields": [
+                {
+                "name": "__🎤 Animateur__",
+                "value": "• Lvl 35 (peut créer des event temporaire)"
+                },
+                {
+                "name": "__📅 Organisateur__",
+                "value": "• Lvl 40 (création d'event & membre du Conseil)"
+                },
+                {
+                "name": "__🛡️ Surveillant__",
+                "value": "• Modérateur des channels vocal/textuel (membre du Comité)"
+                },
+                {
+                "name": "__📁 Conseiller/💰 Trésorier/💼 Vice-président/📱 Président__",
+                "value": "• Staff (membre officiel du Conseil)"
+                }
+            ]
+        };
+        message.guild.channels.find("id", "462927679533088768").sendEmbed(embed)
+        } else {
+            message.channel.send('Pas la permission') 
+        }
+        break;
+        case "infospec":
+        if (message.author.id === "213322033692409857") {
+        const embed = {
+            "description": "Les rôles spéciaux du moment",
+                "color": 7722751,
+                "footer": {
+                    "text": "PS: De nouveaux rôles spéciaux viendront dans le futur"
+                },
+                "fields": [
+                    {
+                    "name": "__🍟 Belge__",
+                    "value": "• Un amour en tête ?"
+                    },
+                    {
+                    "name": "__🥖 Français__",
+                    "value": "• Pour tous les Bleu, blanc, rouge"
+                    },
+                    {
+                    "name": "__❤️ Love __",
+                    "value": "• Parce qu'on ne mange pas que des frites (pas tout le temps)"
                     }
                 ]
         };
-          message.guild.channels.find("id", "462927679533088768").sendEmbed(embed)
+        message.guild.channels.find("id", "462924323414343681").sendEmbed(embed)
         } else {
             message.channel.send('Pas la permission') 
         }
@@ -204,29 +301,8 @@ bot.on("message", function(message) {
     if (message.author.equals(bot.user)) return;
     if (!message.content.startsWith(prefix)) return;
     var args = message.content.substring(prefix.length).split(" ");
-    switch (args[0].toLowerCase()) {
-    case "jfk":
-        const embed = new Discord.RichEmbed()
-        .addField("__Club otaku:__ ", "- :japan:")
-        .addField("__Club du jeu-vidéo:__ ", "- :video_game:")
-        .addField("__Club de rôleplay:__ ", "- :scroll:")
-        .addField("__Club du cinéma:__ ", "- :clapper:")
-        .addField("__Club nature:__ ", "- :sunrise_over_mountains:")
-        .addField("__Club de musique:__ ", "- :musical_keyboard: ")
-        .addField("__Club d'art:__ ", "- :art:")
-        .addField("__Club sportif:__ ", "- :soccer:")
-        .addField("__Club de spammer:__ ", "- :no_entry:")
-        .addField("__Etudiant:__ ", ":triangular_ruler:")
-        .setColor("#75D6FF")
-        message.channel.sendEmbed(embed)
-      }
-})
-bot.on("message", function(message) {
-    if (message.author.equals(bot.user)) return;
-    if (!message.content.startsWith(prefix)) return;
-    var args = message.content.substring(prefix.length).split(" ");
     switch (args[0].toLowerCase()) {  
-    case "clubrole":
+    case "roleclub":
         const embed = new Discord.RichEmbed()
         .addField('__Club otaku:__', "  :japan:", true)
         .addField('__Club du jeu-vidéo:__', ":video_game:", true)
