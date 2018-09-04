@@ -44,21 +44,35 @@ bot.on("message", function(message) {
         break;
         case "regle":
         if (message.author.id === "213322033692409857") {
-        const embed = new Discord.RichEmbed()
-            .setDescription("**__Règlement__**")
-            .addField('Règle 1: ', `Restez courtois. Tout comportement portant atteinte à la bonne ambiance de la communauté et du serveur est susceptible d'être sanctionné.`)
-            .addField('Règle 2: ', `Pas de spam. Le flood est toléré dans #club-de-spammer, si vous avez le rôle "Spammeur" (et dans une moindre mesure, dans les canaux des différents autres club). Les commandes bots doivent être lancées dans #spam.`)
-            .addField('Règle 3: ', `Les propos et contenus inadéquats (insultants, discriminatoires, pornographiques, faisant l'apologie de la violence, d'une idéologie politique ou religieuse) sont strictement interdits.`)
-            .addField('Règle 4: ', `Si vous avez été bannis du serveur Discord, vous n'êtes pas autorisés à y revenir avec un autre compte.`)
-            .addField('Règle 5: ', `Concernant vos pseudonymes Discord: Pas de pseudo inapproprié ou d'usurpation d'identité, évitez d'utiliser votre prénom et votre prénom IRL.`)
-            .addField('Règle 6: ', `Les décisions prises par un membre du conseil (<@&462952083746717697>, <@&462949648076636170>, <@&464388364385124353> et <@&462952216064425984>) ne sont pas négociables. `)
-            .addField('Règle 7: ', `:exclamation:  Respectez le sujet de chaque channel.`)
-            .addField('Règle 8: ', `Le language sms n'est pas proscris mais il doit être modérer.`)
-            .addField('Règle 9: ', `Tout contenu pouvant être jugé comme choquant pour les moins de 18ans devra se trouver dans le channel <#468462827838111772>`)
-            .addField('Règle 10: ', `:exclamation: Définitif: Demander à rejoindre un club (2 maximum) auprès des membres du conseil.`)
-            .addField('Proposition: ', `Sachez que vous pouvez signaler tout comportement qui vous semble contraire aux Règles ou n'importe quel autre problème en contactant directement à un <@&462954827652136980> ou bien un membre du conseil par message privé.`)
-            .setFooter(`PS: Les règles sont sujettes à adaptations et changements dans le futur, si vous avez une quelconque suggestion sur celle-ci. Faites en part par message privé au membre du conseil, merci.`)
-            .setColor('#8B0000')
+        const embed = {
+            "title": ":exclamation:__**Règlement**__:exclamation: ",
+            "description": "La communauté possède un règlement qui se doit d’être respecté, afin de maintenir une bonne ambiance au sein du serveur. Toute infraction au règlement résultera à une sanction adaptée à la gravité de vos actes. Le staff se réserve le droit s’il en juge nécessaire, de sanctionner tout comportement incorrect, même si celui-ci ne rentre pas dans le règlement.",
+            "color": 9109504,
+            "footer": {
+                "text": "PS: Les règles sont sujettes à adaptations et changements dans le futur, si vous avez une quelconque suggestion sur celle-ci. Faites en part par message privé au membre du conseil, merci."
+            },
+            "thumbnail": {
+                "url": "https://imgur.com/a/6cXSjCU"
+            },
+            "fields": [
+                {
+                "name": ":white_small_square:__Les règles générales (s’appliquent en vocal et à l’écrit)__",
+                "value": "Sont interdits les comportements suivants (le non-respect de ces interdictions peuvent s’ensuivre d’un ban):                                                         • Le troll et le raid.                                                                                                 • Tout comportement discriminatoire/haineux/insultant (homophobie, racisme, sexisme, etc…)                                                                                      • Tout message ou photo de profil à caractère pornographique, pédophile (sauf dans <#468462827838111772>).                                                                                                                • Toutes les formes de harcèlement.                                                                • Le partage d’informations privées sans le consentement de la personne concernée.                                                                                                     • Le contournement de mute, ban, et autres sanctions."
+                },
+                {
+                "name": ":white_small_square:__Les règles des salons textuels__",
+                "value": "• Evitez d’utiliser le langage SMS.                                                                      • Les insultes, y compris vis-à-vis de vos amis, ne sont pas tolérées.       • Il est interdit de spam, le bot peut vous mute automatiquement si ce n’est pas un modérateur qui s’en occupe.                                                       • N’abusez pas des mentions inutiles d’une ou plusieurs personnes.        • Evitez d’utiliser les majuscules pour écrire un message, cela équivaut à crier et pourrait déranger les autres membres du serveur.                       • Utilisez les salons appropriés (<#463025770483417097>, <#462960550641664011>, etc…)"
+                },
+                {
+                "name": ":white_small_square:__Les règles des salons vocaux__",
+                "value": "• Il est interdit d’insulter dans les salons vocaux, même après une énième défaite sur League of Legends.                                                            • Il est interdit de faire des bruits pouvant nuire aux tympans des personnes présentes dans le salon.                                                                   • Eviter de parler dans le salon musique lorsque vous y entrez, certaines personnes écoutent leurs musiques calmement et ne souhaitent pas être dérangées.                                                                                                      • Il est interdit de switch de salon de façon répétée dans le seul but de générer une notification sonore à ceux présents dans le salon.                  • L’utilisation de SoundBox est prohibée."
+                },
+                {
+                "name": ":white_small_square:__Les règles concernant la publicité__",
+                "value": "Sont proscrits les types de publicité suivantes:                                              • Vers d’autres serveurs discord.                                                                       • Pour vos serveurs de jeu (si la demande n'a pas été accepté par un membre du conseil).                                                                                              • En message privé si elle n’est pas sollicitée par la personne recevant le message."
+                }
+            ]};
+           
             message.guild.channels.find("id", "462927679533088768").sendEmbed(embed)
         } else {
             message.channel.send('Pas la permission') 
