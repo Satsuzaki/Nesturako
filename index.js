@@ -52,7 +52,7 @@ bot.on("message", function(message) {
                 "text": "PS: Les règles sont sujettes à adaptations et changements dans le futur, si vous avez une quelconque suggestion sur celle-ci. Faites en part par message privé au membre du conseil, merci."
             },
             "thumbnail": {
-                "url": "https://imgur.com/a/6cXSjCU"
+                "url": "https://image.noelshack.com/fichiers/2018/36/2/1536060576-stamp-reglement-png-454bf0ad538c6e59ce44dcb117ab7adf.png"
             },
             "fields": [
                 {
