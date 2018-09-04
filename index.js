@@ -18,8 +18,8 @@ bot.on("message", function(message) {
     if (!message.content.startsWith(prefix)) return;
     var args = message.content.substring(prefix.length).split(" ");
     switch (args[0].toLowerCase()) {
-        case "ping":
-        message.channel.sendMessage("Temps de latence avec le serveur: `" + `${(Date.now () - message.createdTimestamp) / 100}` + "ms`");
+        case "inlife":
+        message.channel.sendMessage("Je suis en vie !!!");
         break; 
         case "poll":
         let args = message.content.split(" ").slice(1);
