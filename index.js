@@ -316,7 +316,7 @@ bot.on("message", function(message) {
             "description": "Les rôles spéciaux du moment",
                 "color": 7722751,
                 "footer": {
-                    "text": "PS: De nouveaux rôles spéciaux viendront dans le futur"
+                    "text": "PS: De nouveaux rôles spéciaux viendront dans le futur (**❗️ Rejoignez que 2 clubs maximum ❗️**)"
                 },
                 "fields": [
                     {
