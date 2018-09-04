@@ -316,7 +316,7 @@ bot.on("message", function(message) {
             "description": "Les rôles spéciaux du moment",
                 "color": 7722751,
                 "footer": {
-                    "text": "PS: De nouveaux rôles spéciaux viendront dans le futur (**❗️ Rejoignez que 2 clubs maximum ❗️**)"
+                    "text": "PS: De nouveaux rôles spéciaux viendront dans le futur"
                 },
                 "fields": [
                     {
@@ -333,7 +333,7 @@ bot.on("message", function(message) {
                     }
                 ]
         };
-        message.guild.channels.find("id", "462923863995580416").sendEmbed(embed)
+        message.guild.channels.find("id", "462927679533088768").sendEmbed(embed)
         } else {
             message.channel.send('Pas la permission') 
         }
