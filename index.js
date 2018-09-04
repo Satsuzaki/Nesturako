@@ -333,7 +333,7 @@ bot.on("message", function(message) {
                     }
                 ]
         };
-        message.guild.channels.find("id", "462924323414343681").sendEmbed(embed)
+        message.guild.channels.find("id", "462923863995580416").sendEmbed(embed)
         } else {
             message.channel.send('Pas la permission') 
         }
