@@ -79,30 +79,30 @@ bot.on("message", function(message) {
         if (message.author.id === "213322033692409857") {
         const embed = {
             "title": ":video_game: __**Rôles**__ :art:",
-            "description": "Voici quelques explications sur les rôles qui compose les différentes permissions/récompenses disponible sur le serveur",
-            "color": 7722751,
-            "footer": {
-              "text": "PS: De futurs rôles spéciaux feront certainement leur apparition."
-            },
-            "fields": [
-              {
-                "name": ":white_small_square:__Les classes__",
-                "value": "@📘 Classe-E: Classe du début (peu de permission)                                                         @📙 Classe-D: Lvl 5 (possibilité d'aller à l'extérieur du lycée)                                                                                               @📗 Classe-C: Lvl 10 (accès au <#468462827838111772>)                                                                                                  @📕 Classe-B: Lvl 15 (accès à des rôles spéciaux)                                                                                                             @📒  Classe-A: Lvl 20 (permission à venir)                                                                @📓 Classe-S: Lvl 30 (rentrée non-obligatoire au Conseil de discipline)"
-              },
-              {
-                "name": ":white_small_square:__Les clubs__",
-                "value": "@🗾 Otaku: Pour tous les Otakus                                                                            @🎮 Gamer: Pour toutes les personnes cherchant des potes pour jouer        @📜 Rôleplayer: Si vous aimez les rencontres Rp. A vous de créez                                                       @🎬 Cinéphile: Pour tous les mordus du 7ème Art                                             @🌄Naturologue: Si vous attachez une importance à la nature (zoologie, herbologie, ...)                                                                                                                  @🎹 Musicien: Venez partager vos musiques préférées, voir même vos créations                                                                                                                           @🎨 Artiste: Vous aimez les dessins, la peinture, ce club est fait pour vous @⚽ Sportif: Pour les commentateurs/chroniqueurs en herbe                         @⛔ Spammer: Venez spam (**vous ne pouvez pas xp partout**)"
-              },
-              {
-                "name": ":white_small_square:__Rôles importants__",
-                "value": "@🎤 Animateur: Lvl 35 (création d'event temporaire)                                        @📅 Organisateur: Lvl 40 (création d'event & membre du Conseil)               @🛡️ Surveillant: Modérateur des channels vocal/textuel (membre du Comité)                                                                                                                             @📁 Conseiller/@💰 Trésorier/@💼 Vice-président/@📱 Président: Staff (membre officiel du Conseil)"
-              },
-              {
-                "name": ":white_small_square:__Rôles spéciaux__",
-                "value": "@❤️ Love: Un amour en tête ?                                                                                  @🥖 Français: Pour tous les Bleu, blanc, rouge                                                                        @🍟 Belge: Parce qu'on ne mange pas que des frites (pas tout le temps)                                                                                             @📐 Etudiant: Si vous cherchez des conseils, de l'aide pour vos études"
-              }
-            ]
-          };
+  "description": "Voici quelques explications sur les rôles qui compose les différentes permissions/récompenses disponible sur le serveur",
+  "color": 7722751,
+  "footer": {
+    "text": "PS: De futurs rôles spéciaux feront certainement leur apparition."
+  },
+  "fields": [
+    {
+      "name": ":white_small_square:__Les classes__",
+      "value": "• Classe-E: Classe du début (peu de permission)                                                         • Classe-D: Lvl 5 (possibilité d'aller à l'extérieur du lycée)                                                                                               • Classe-C: Lvl 10 (accès au <#468462827838111772>)                                                                                                  • Classe-B: Lvl 15 (accès à des rôles spéciaux)                                                                                                             • Classe-A: Lvl 20 (permission à venir)                                                                       • Classe-S: Lvl 30 (rentrée non-obligatoire au Conseil de discipline)"
+    },
+    {
+      "name": ":white_small_square:__Les clubs__",
+      "value": "• Otaku: Pour tous les Otakus                                                                                        • Gamer: Pour toutes les personnes cherchant des potes pour jouer                   • Rôleplayer: Si vous aimez les rencontres Rp. A vous de créez                                                       • Cinéphile: Pour tous les mordus du 7ème Art                                                         • Naturologue: Si vous attachez une importance à la nature (zoologie, herbologie, ...)                                                                                                                     • Musicien: Venez partager vos musiques préférées, voir même vos créations                                                                                                                           • Artiste: Vous aimez les dessins, la peinture, ce club est fait pour vous             • Sportif: Pour les commentateurs/chroniqueurs en herbe"
+    },
+    {
+      "name": ":white_small_square:__Rôles importants__",
+      "value": "• Animateur: Lvl 35 (création d'event temporaire)                                                   • Organisateur: Lvl 40 (création d'event & membre du Conseil)                          • Surveillant: Modérateur des channels vocal/textuel (membre du Comité)                                                                                                                             • Conseiller/Trésorier/Vice-président/Président: Staff (membre officiel du Conseil)"
+    },
+    {
+      "name": ":white_small_square:__Rôles spéciaux__",
+      "value": "• Love: Un amour en tête ?                                                                                             • Français: Pour tous les Bleu, blanc, rouge                                                                              • Belge: Parce qu'on ne mange pas que des frites (pas tout le temps)                                                                                                • Etudiant: Si vous cherchez des conseils, de l'aide pour vos études"
+    }
+  ]
+};
           message.guild.channels.find("id", "462927679533088768").sendEmbed(embed)
         } else {
             message.channel.send('Pas la permission') 
