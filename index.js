@@ -430,7 +430,7 @@ bot.on("message", function(message) {
         .addField('__Etudiant:__', ":triangular_ruler:",true )
         .setFooter('❗️ Rejoignez que 2 clubs maximum ❗️')
         .setColor("#75D6FF")
-        message.channel.sendEmbed(embed)
+        message.guild.channels.find("id", "468159908953456650").sendEmbed(embed)
     }
 })
    
