@@ -338,7 +338,7 @@ bot.on("message", function(message) {
             message.channel.send('Pas la permission') 
         }
         break;
-        case "soon":
+        case "infochan":
         if (message.author.id === "213322033692409857") {
             const embed = {
                     "description": "Explication des channels, ici",
@@ -347,7 +347,7 @@ bot.on("message", function(message) {
                       "url": "https://cdn.discordapp.com/attachments/394535366650101770/486830675480281098/Capture.PNG"
                     }
                   };
-            message.guild.channels.find("id", "462924323414343681").sendEmbed(embed)
+            message.guild.channels.find("id", "462927679533088768").sendEmbed(embed)
             } else {
                 message.channel.send('Pas la permission') 
             }
