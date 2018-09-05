@@ -18,8 +18,8 @@ bot.on("message", function(message) {
     if (!message.content.startsWith(prefix)) return;
     var args = message.content.substring(prefix.length).split(" ");
     switch (args[0].toLowerCase()) {
-        case "inlife":
-        message.channel.sendMessage("Je suis en vie !!!");
+        case "ping":
+        message.channel.sendMessage("Temps de latence avec le serveur: `" + `${(Date.now () - message.createdTimestamp) / 100}` + "ms`");
         break; 
         case "poll":
         let args = message.content.split(" ").slice(1);
@@ -333,22 +333,24 @@ bot.on("message", function(message) {
                     }
                 ]
         };
-        message.guild.channels.find("id", "462927679533088768").sendEmbed(embed)
+        message.guild.channels.find("id", "462924323414343681").sendEmbed(embed)
         } else {
             message.channel.send('Pas la permission') 
         }
         break;
         case "soon":
         if (message.author.id === "213322033692409857") {
-            const embed = new Discord.RichEmbed()
-                .setTitle("**__Soon__**")
-                .setDescription("L'explication des channels vocal/textuel arrivera bientôt.")
-                .setColor('#8B0000')
-                message.guild.channels.find("id", "462927679533088768").sendEmbed(embed)
+            const embed = {
+                    "description": "Explication des channels, ici",
+                    "color": 9109504,
+                    "image": {
+                      "url": "https://cdn.discordapp.com/attachments/394535366650101770/486830675480281098/Capture.PNG"
+                    }
+                  };
+            message.guild.channels.find("id", "462924323414343681").sendEmbed(embed)
             } else {
                 message.channel.send('Pas la permission') 
             }
-        break;
         case "say":
         if (message.author.id === "213322033692409857" || message.author.id === "369914503892041730" || message.author.id === "316672290479931392" || message.author.id === "269530258267439115") {
             let textsay = message.content.split(" ").slice(1);
@@ -431,7 +433,7 @@ bot.on("message", function(message) {
         .addField('__Etudiant:__', ":triangular_ruler:",true )
         .setFooter('❗️ Rejoignez que 2 clubs maximum ❗️')
         .setColor("#75D6FF")
-        message.guild.channels.find("id", "468159908953456650").sendEmbed(embed)
+        message.channel.sendEmbed(embed)
         } else {
             message.channel.send('Pas la permission')
         }
@@ -447,7 +449,7 @@ bot.on("message", function(message) {
         .addField('__**Français**__', ":french_bread:", true)
         .setFooter('❗️ Rejoignez que 2 clubs maximum ❗️')
         .setColor("#75D6FF")
-        message.guild.channels.find("id", "462923863995580416").sendEmbed(embed)
+        message.channel.sendEmbed(embed)
         } else {
             message.channel.send('Pas la permission')
         }
