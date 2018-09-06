@@ -365,32 +365,7 @@ bot.on("message", function(message) {
             message.guild.channels.find("id", "462949032226979850").sendMessage("Salutation chers élèves, je me nomme Nesturako Seijuro. Je suis professeur de programmation au lycée **Alafia**. Je suis encore en plein configuration par mon créateur donc si vous souhaitez m'aiderà en apprendre plus à mon sujet. Faites des suggestions sur ce que je pourrais faire, s'il vous plait ^^'");
         }
         break;
-        case "help":
-            const embed = new Discord.RichEmbed()
-            .setDescription ("**Information sur les commandes**")
-            .addField("Prefix: ", prefix)
-            .addField("Invitation: ", "<prefix>invit")
-            .addField("Information: ", "<prefix>info")
-            .addField("Ping: ", "<prefix>ping")
-            .setColor("#D9C400")
-            message.channel.sendEmbed(embed)
-        break;
-        case "ahelp":
-        if (message.author.id === "213322033692409857" || message.author.id === "369914503892041730" || message.author.id === "316672290479931392" || message.author.id === "269530258267439115") {
-            const embed = new Discord.RichEmbed()
-            .setDescription ("**Information sur les commandes**")
-            .addField("Prefix: ", prefix)
-            .addField("Invitation: ", "<prefix>invit")
-            .addField("Information: ", "<prefix>info")
-            .addField("Ping: ", "<prefix>ping")
-            .addField("Say: ", "<prefix>say")
-            .addField("Sondage: ", "<prefix>poll + <question>")
-            .setColor("#D9C400")
-            message.channel.sendEmbed(embed)
-        } else {
-            message.channel.send('Pas la permission')
-        }
-        break;
+        
         case "invit":
             message.channel.send('https://discord.gg/9Hy94Y4');
         break;
