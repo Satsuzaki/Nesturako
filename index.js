@@ -321,7 +321,7 @@ bot.on("message", function(message) {
                 "fields": [
                     {
                     "name": "__🍟 Belge__",
-                    "value": "• Un amour en tête ?"
+                    "value": "• Parce qu'on ne mange pas que des frites (pas tout le temps)"
                     },
                     {
                     "name": "__🥖 Français__",
@@ -329,7 +329,7 @@ bot.on("message", function(message) {
                     },
                     {
                     "name": "__❤️ Love __",
-                    "value": "• Parce qu'on ne mange pas que des frites (pas tout le temps)"
+                    "value": "• Un amour en tête ?"
                     }
                 ]
         };
