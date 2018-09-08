@@ -360,7 +360,7 @@ bot.on("message", function(message) {
                 "fields": [
                   {
                     "name": ":white_small_square:__Conseil 1:__",
-                    "value": "• Dès que vous postez un message, celui-ci vous donnera une valeur aléatoire en 15-25 d'xp."
+                    "value": "• Dès que vous postez un message, celui-ci vous donnera une valeur aléatoire entre 15 et 25 d'xp."
                   },
                   {
                     "name": ":white_small_square:__Conseil 2:__",
