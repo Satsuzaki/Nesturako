@@ -351,6 +351,32 @@ bot.on("message", function(message) {
             } else {
                 message.channel.send('Pas la permission') 
             }
+        break;
+        case "infoxp":
+        if (message.author.id === "213322033692409857") {
+        const embed = {
+            "title": ":arrow_right: __Comment XP avec Hatchi ?__",
+                "color": 7722751,
+                "fields": [
+                  {
+                    "name": ":white_small_square:__Conseil 1:__",
+                    "value": "• Dès que vous postez un message, celui-ci vous donnera une valeur aléatoire en 15-25 d'xp."
+                  },
+                  {
+                    "name": ":white_small_square:__Conseil 2:__",
+                    "value": "• Pour évitez tout spam, un seul message par minute vous donnera de l'xp."
+                  },
+                  {
+                    "name": ":white_small_square:__Conseil 3:__",
+                    "value": "• Pour voir votre niveau, faites **!rank** dans les channels prévus à cet effet."
+                  }
+                ]
+              };
+        message.guild.channels.find("id", "462927679533088768").sendEmbed(embed)
+        } else {
+            message.channel.send('Pas la permission') 
+        }
+        break;
         case "say":
         if (message.author.id === "213322033692409857" || message.author.id === "369914503892041730" || message.author.id === "316672290479931392" || message.author.id === "269530258267439115") {
             let textsay = message.content.split(" ").slice(1);
@@ -365,11 +391,6 @@ bot.on("message", function(message) {
             message.guild.channels.find("id", "462949032226979850").sendMessage("Salutation chers élèves, je me nomme Nesturako Seijuro. Je suis professeur de programmation au lycée **Alafia**. Je suis encore en plein configuration par mon créateur donc si vous souhaitez m'aiderà en apprendre plus à mon sujet. Faites des suggestions sur ce que je pourrais faire, s'il vous plait ^^'");
         }
         break;
-        
-        case "invit":
-            message.channel.send('https://discord.gg/9Hy94Y4');
-        break;
-        
     }
 })
 bot.on("message", function(message) {
