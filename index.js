@@ -52,7 +52,7 @@ bot.on("message", function(message) {
             .setTitle("**Démarrage du sondage**")
             .addField("Question: ", quest)
             .setColor('#FF800D')
-            .setFooter(`Sondage lancé par: ${message.author.username}`, `${message.author.avatarURL}`)
+            .setFooter("Choix A: 🅰️, Choix B: 🅱️ et Je ne sais pas: ❌")
 
         message.guild.channels.find("id", "480075582340595744").sendEmbed(embed)
             .then(function (message){
