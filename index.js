@@ -51,14 +51,14 @@ bot.on("message", function(message) {
             const embed = new Discord.RichEmbed()
             .setTitle("**Démarrage du sondage**")
             .addField("Question: ", quest)
-            .setColor('#FF800D')
             .setFooter("Choix A: 🅰️, Choix B: 🅱️ et Je ne sais pas: ❌")
+            .setColor('#FF800D')
 
         message.guild.channels.find("id", "480075582340595744").sendEmbed(embed)
             .then(function (message){
-            msg.react('🅰️')
-            msg.react('🅱️')
-            msg.react('❌')
+            msg.react("🅰️")
+            msg.react("🅱️")
+            msg.react("❌")
         })
         } else {
             message.channel.send('Pas la permission') 
