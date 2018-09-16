@@ -45,7 +45,6 @@ bot.on("message", function(message) {
         case "mpoll":
         let args = message.content.split(" ").slice(1);
         let choicea = args.join(" ")
-        let args = message.content.split(" ").slice(2);
         let choiceb = args.join(" ")
         let idn = "Je ne sais pas";
         if (!message.guild.me.hasPermission("MANAGE_MESSAGES")) {
