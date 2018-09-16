@@ -44,17 +44,18 @@ bot.on("message", function(message) {
         break;
         case "mpoll":
         let args = message.content.split(" ").slice(1);
-        let choicea = args.join(" ")
-        if (!message.guild.me.hasPermission("MANAGE_MESSAGES")) {
-        const embed = new Discord.RichEmbed()
-        .setTitle("**Le sondage démarre!**")
-        .setColor("#5599ff")
-        .addField('Question: ', choicea)
-        .addField('Je ne sais pas', ":x:")
-        .setFooter(`Sondage lancé par: ${message.author.username}`, `${message.author.avatarURL}`)
+        let quest = args.join(" ")
+        if (!quest) {
+            message.channel.send('Rentrez une question') 
+        } else if (message.author.id === "213322033692409857") {
+            const embed = new Discord.RichEmbed()
+            .setTitle("**Démarrage du sondage**")
+            .addField("Question: ", quest)
+            .setColor('#FF800D')
+            .setFooter(`Sondage lancé par: ${message.author.username}`, `${message.author.avatarURL}`)
 
         message.guild.channels.find("id", "480075582340595744").sendEmbed(embed)
-        .then(msg => {
+            .then(function (message){
             msg.react('🅰️')
             msg.react('🅱️')
             msg.react('❌')
