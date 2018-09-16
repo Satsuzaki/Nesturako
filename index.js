@@ -43,8 +43,10 @@ bot.on("message", function(message) {
         }
         break;
         case "mpoll":
-        let choicea = args[1];
-        let choiceb = args[2];
+        let args = message.content.split(" ").slice(1);
+        let choicea = args.join(" ")
+        let args = message.content.split(" ").slice(2);
+        let choiceb = args.join(" ")
         let idn = "Je ne sais pas";
         if (!message.guild.me.hasPermission("MANAGE_MESSAGES")) {
         const embed = new Discord.RichEmbed()
