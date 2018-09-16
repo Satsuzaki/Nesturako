@@ -42,6 +42,30 @@ bot.on("message", function(message) {
             message.channel.send('Pas la permission') 
         }
         break;
+        case "mpoll":
+        let choicea = args[0];
+        let choiceb = args[1];
+        let idn = args[2];
+        if (!message.guild.me.hasPermission("MANAGE_MESSAGES")) {
+        const embed = new Discord.RichEmbed()
+        .setTitle("**Le sondage démarre!**")
+        .setColor("#5599ff")
+        .setDescription(`${question}`)
+        .addField('Choix A', choicea)
+        .addField('Choix B', choiceb)
+        .addField('Je ne sais pas', idn)
+        .setFooter(`Sondage lancé par: ${message.author.username}`, `${message.author.avatarURL}`)
+
+        message.guild.channels.find("id", "480075582340595744").sendEmbed(embed)
+        .then(msg => {
+            msg.react('🅰️')
+            msg.react('🅱️')
+            msg.react('❌')
+        })
+        } else {
+            message.channel.send('Pas la permission') 
+        }
+        break;
         case "regle":
         if (message.author.id === "213322033692409857") {
             const embed = {
