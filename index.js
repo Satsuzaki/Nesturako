@@ -43,9 +43,9 @@ bot.on("message", function(message) {
         }
         break;
         case "mpoll":
-        let choicea = args[0];
-        let choiceb = args[1];
-        let idn = args[2];
+        let choicea = args[1];
+        let choiceb = args[2];
+        let idn = "Je ne sais pas;
         if (!message.guild.me.hasPermission("MANAGE_MESSAGES")) {
         const embed = new Discord.RichEmbed()
         .setTitle("**Le sondage démarre!**")
