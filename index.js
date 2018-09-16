@@ -42,12 +42,12 @@ bot.on("message", function(message) {
             message.channel.send('Pas la permission') 
         }
         break;
-        case "mpoll":
+        /*case "mpoll":
         let args = message.content.split(" ").slice(1);
         let quest = args.join(" ")
         if (!quest) {
             message.channel.send('Rentrez une question') 
-        } else if ("message.author.id === "213322033692409857") {
+        } else if (message.author.id === "213322033692409857") {
             const embed = new Discord.RichEmbed()
             .setTitle("**Démarrage du sondage**")
             .addField("Question: ", quest)
@@ -63,7 +63,7 @@ bot.on("message", function(message) {
         } else {
             message.channel.send('Pas la permission') 
         }
-        break;
+        break;*/
         case "regle":
         if (message.author.id === "213322033692409857") {
             const embed = {
