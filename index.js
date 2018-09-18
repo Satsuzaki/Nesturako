@@ -318,7 +318,7 @@ bot.on("message", function(message) {
                 "value": "• Lvl 45 (modérateur & membre du Comité)"
                 },
                 {
-                "name": "__📅 Organisateur__",
+                "name": "__📅 Responsable__",
                 "value": "• Gère tout ce qui touche au club dont il est responsable"
                 },
                 {
