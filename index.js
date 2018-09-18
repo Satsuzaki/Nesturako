@@ -314,12 +314,12 @@ bot.on("message", function(message) {
                 "value": "• Lvl 35 (peut créer des event temporaire)"
                 },
                 {
-                "name": "__📅 Organisateur__",
-                "value": "• Lvl 40 (création d'event & membre du Conseil)"
+                "name": "__🛡️ Surveillant__",
+                "value": "• Lvl 45 (modérateur & membre du Comité)"
                 },
                 {
-                "name": "__🛡️ Surveillant__",
-                "value": "• Modérateur des channels vocal/textuel (membre du Comité)"
+                "name": "__📅 Organisateur__",
+                "value": "• Gère tout ce qui touche au club dont il est responsable"
                 },
                 {
                 "name": "__📁 Conseiller/💰 Trésorier/💼 Vice-président/📱 Président__",
