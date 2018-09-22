@@ -411,9 +411,9 @@ bot.on("message", function(message) {
             .setColor('#FFB60B')
             
             message.guild.channels.find("id", "480075582340595744").sendEmbed(embed)
-            .then(function (message){
-            message.react("1️⃣")
-            message.react("2️⃣")
+            .then(function (msg){
+            msg.react("1️⃣")
+            msg.react("2️⃣")
             }) 
         } else {
             message.channel.send('Pas la permission') 
