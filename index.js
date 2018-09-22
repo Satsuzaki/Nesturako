@@ -405,14 +405,14 @@ bot.on("message", function(message) {
             message.channel.send('Rentrez une question') 
         } else if (message.author.id === "213322033692409857") {
             const embed = new Discord.RichEmbed()
-            .setTitle("__**Tu préfères ?**__")
-            .addField("Question: ", choice)
+            .setTitle("__**Sondage**__")
+            .addField("Tu préfères ? ", choice)
             .setFooter('Choix 1: 🅰️ ou Choix 2: 🅱️')
             .setColor('#FFB60B')
             
             message.guild.channels.find("id", "480075582340595744").sendEmbed(embed)
             .then(function (message){
-            message.react("🅰️")
+            message.react(":a:")
             message.react("🅱️")
             }) 
         } else {
