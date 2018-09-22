@@ -412,8 +412,8 @@ bot.on("message", function(message) {
             
             message.guild.channels.find("id", "480075582340595744").sendEmbed(embed)
             .then(function (message){
-            message.react(":one:")
-            message.react(":two:")
+            message.react("✅")
+            message.react("❌")
             }) 
         } else {
             message.channel.send('Pas la permission') 
