@@ -407,14 +407,13 @@ bot.on("message", function(message) {
             const embed = new Discord.RichEmbed()
             .setTitle("__**Tu préfères ?**__")
             .addField("Question: ", choice)
-            .setFooter('Choix 1: 🅰️, Choix 2: 🅱️ et Je ne sais pas: ❓')
+            .setFooter('Choix 1: 🅰️ ou Choix 2: 🅱️')
             .setColor('#FFB60B')
             
             message.guild.channels.find("id", "480075582340595744").sendEmbed(embed)
             .then(function (message){
             message.react("🅰️")
             message.react("🅱️")
-            message.react("❓")
             }) 
         } else {
             message.channel.send('Pas la permission') 
