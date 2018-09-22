@@ -28,7 +28,7 @@ bot.on("message", function(message) {
             message.channel.send('Rentrez une question') 
         } else if (message.author.id === "213322033692409857" || message.author.id === "369914503892041730" || message.author.id === "316672290479931392" || message.author.id === "269530258267439115") {
             const embed = new Discord.RichEmbed()
-            .setDescription("**Sondage**")
+            .setTitle("__**Sondage**__")
             .addField("Question: ", tte)
             .setFooter('Réagissez par ✅ ou ❌!')
             .setColor('#FF800D')
@@ -42,28 +42,28 @@ bot.on("message", function(message) {
             message.channel.send('Pas la permission') 
         }
         break;
-        /*case "mpoll":
+        case "mpoll":
         let args = message.content.split(" ").slice(1);
-        let quest = args.join(" ")
-        if (!quest) {
+        let choice = args.join(" ")
+        if (!choice) {
             message.channel.send('Rentrez une question') 
         } else if (message.author.id === "213322033692409857") {
             const embed = new Discord.RichEmbed()
-            .setTitle("**Démarrage du sondage**")
-            .addField("Question: ", quest)
-            .setFooter("Choix A: 🅰️, Choix B: 🅱️ et Je ne sais pas: ❌")
-            .setColor('#FF800D')
-
-        message.guild.channels.find("id", "480075582340595744").sendEmbed(embed)
-        .then(function (message){
+            .setTitle("__**Tu préfères ?**__")
+            .addField("Question: ", choice)
+            .setFooter('Choix 1: 🅰️, Choix 2: 🅱️ et Je ne sais pas: ❓')
+            .setColor('#FFB60B')
+            
+            message.guild.channels.find("id", "480075582340595744").sendEmbed(embed)
+            .then(function (message){
             message.react("🅰️")
             message.react("🅱️")
-            message.react("❌")
-        })
+            message.react("❓")
+            }) 
         } else {
             message.channel.send('Pas la permission') 
         }
-        break;*/
+        break;
         case "regle":
         if (message.author.id === "213322033692409857") {
             const embed = {
