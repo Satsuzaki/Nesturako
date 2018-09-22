@@ -42,28 +42,6 @@ bot.on("message", function(message) {
             message.channel.send('Pas la permission') 
         }
         break;
-        case "mpoll":
-        let args = message.content.split(" ").slice(1);
-        let choice = args.join(" ")
-        if (!choice) {
-            message.channel.send('Rentrez une question') 
-        } else if (message.author.id === "213322033692409857") {
-            const embed = new Discord.RichEmbed()
-            .setTitle("__**Tu préfères ?**__")
-            .addField("Question: ", choice)
-            .setFooter('Choix 1: 🅰️, Choix 2: 🅱️ et Je ne sais pas: ❓')
-            .setColor('#FFB60B')
-            
-            message.guild.channels.find("id", "480075582340595744").sendEmbed(embed)
-            .then(function (message){
-            message.react("🅰️")
-            message.react("🅱️")
-            message.react("❓")
-            }) 
-        } else {
-            message.channel.send('Pas la permission') 
-        }
-        break;
         case "regle":
         if (message.author.id === "213322033692409857") {
             const embed = {
@@ -420,7 +398,29 @@ bot.on("message", function(message) {
     if (!message.content.startsWith(prefix)) return;
     var args = message.content.substring(prefix.length).split(" ");
     switch (args[0].toLowerCase()) {
-    case "serv":
+    case "mpoll":
+        let args = message.content.split(" ").slice(1);
+        let choice = args.join(" ")
+        if (!choice) {
+            message.channel.send('Rentrez une question') 
+        } else if (message.author.id === "213322033692409857") {
+            const embed = new Discord.RichEmbed()
+            .setTitle("__**Tu préfères ?**__")
+            .addField("Question: ", choice)
+            .setFooter('Choix 1: 🅰️, Choix 2: 🅱️ et Je ne sais pas: ❓')
+            .setColor('#FFB60B')
+            
+            message.guild.channels.find("id", "480075582340595744").sendEmbed(embed)
+            .then(function (message){
+            message.react("🅰️")
+            message.react("🅱️")
+            message.react("❓")
+            }) 
+        } else {
+            message.channel.send('Pas la permission') 
+        }
+        break;
+     case "serv":
         const embed = new Discord.RichEmbed()
         .setDescription ("**Information du Discord**")
         .addField("__Nom du discord:__ ", message.guild.name)
