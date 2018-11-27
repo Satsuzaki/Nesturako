@@ -12,36 +12,12 @@ bot.on('guildMemberAdd', member => {
     console.log('User ' + member.user.username + ' a rejoint le serveur!')
     member.guild.channels.get('462232742126419969').send('Bonjour ' + member + ', bienvenue au lycée **Alafia** :tada::hugging: !')
 });
- /* Commandes Utiles */
+ /* Commandes Embed */
 bot.on("message", function(message) {
     if (message.author.equals(bot.user)) return;
     if (!message.content.startsWith(prefix)) return;
     var args = message.content.substring(prefix.length).split(" ");
     switch (args[0].toLowerCase()) {
-        case "ping":
-        message.channel.sendMessage("Temps de latence avec le serveur: `" + `${(Date.now () - message.createdTimestamp) / 100}` + "ms`");
-        break; 
-        case "poll":
-        let args = message.content.split(" ").slice(1);
-        let tte = args.join(" ")
-        if (!tte) {
-            message.channel.send('Rentrez une question') 
-        } else if (message.author.id === "213322033692409857" || message.author.id === "369914503892041730" || message.author.id === "316672290479931392" || message.author.id === "269530258267439115") {
-            const embed = new Discord.RichEmbed()
-            .setTitle("__**Sondage**__")
-            .addField("Question: ", tte)
-            .setFooter('Réagissez par ✅ ou ❌!')
-            .setColor('#FF800D')
-            
-            message.guild.channels.find("id", "480075582340595744").sendEmbed(embed)
-            .then(function (message){
-            message.react("✅")
-            message.react("❌")
-            }) 
-        } else {
-            message.channel.send('Pas la permission') 
-        }
-        break;
         case "regle":
         if (message.author.id === "213322033692409857") {
             const embed = {
@@ -292,12 +268,12 @@ bot.on("message", function(message) {
                 "value": "• Lvl 35 (peut créer des event temporaire)"
                 },
                 {
-                "name": "__🛡️ Surveillant__",
-                "value": "• Lvl 45 (modérateur & membre du Comité)"
+                "name": "__📅 Organisateur__",
+                "value": "• Lvl 40 (création d'event & membre du Conseil)"
                 },
                 {
-                "name": "__📅 Responsable__",
-                "value": "• Gère tout ce qui touche au club dont il est responsable"
+                "name": "__🛡️ Surveillant__",
+                "value": "• Modérateur des channels vocal/textuel (membre du Comité)"
                 },
                 {
                 "name": "__📁 Conseiller/💰 Trésorier/💼 Vice-président/📱 Président__",
@@ -353,113 +329,52 @@ bot.on("message", function(message) {
             }
         break;
         case "infoxp":
-        if (message.author.id === "213322033692409857") {
-        const embed = {
-            "title": ":arrow_right: __Comment XP avec Hatchi ?__",
-                "color": 7722751,
-                "fields": [
-                  {
-                    "name": ":white_small_square:__Conseil 1:__",
-                    "value": "• Dès que vous postez un message, celui-ci vous donnera une valeur aléatoire entre 15 et 25 d'xp."
-                  },
-                  {
-                    "name": ":white_small_square:__Conseil 2:__",
-                    "value": "• Pour évitez tout spam, un seul message par minute vous donnera de l'xp."
-                  },
-                  {
-                    "name": ":white_small_square:__Conseil 3:__",
-                    "value": "• Pour voir votre niveau, faites **!rank** dans les channels prévus à cet effet."
-                  }
-                ]
-              };
-        message.guild.channels.find("id", "462927679533088768").sendEmbed(embed)
+            if (message.author.id === "213322033692409857") {
+            const embed = {
+                "title": ":arrow_right: __Comment XP avec Hatchi ?__",
+                    "color": 7722751,
+                    "fields": [
+                    {
+                        "name": ":white_small_square:__Conseil 1:__",
+                        "value": "• Dès que vous postez un message, celui-ci vous donnera une valeur aléatoire en 15-25 d'xp."
+                    },
+                    {
+                        "name": ":white_small_square:__Conseil 2:__",
+                        "value": "• Pour évitez tout spam, un seul message par minute vous donnera de l'xp."
+                    },
+                    {
+                        "name": ":white_small_square:__Conseil 3:__",
+                        "value": "• Pour voir votre niveau, faites **!rank** dans les channels prévus à cet effet."
+                    }
+                    ]
+                };
+            message.guild.channels.find("id", "462927679533088768").sendEmbed(embed)
         } else {
             message.channel.send('Pas la permission') 
         }
-        break;
-        case "say":
-        if (message.author.id === "213322033692409857" || message.author.id === "369914503892041730" || message.author.id === "316672290479931392" || message.author.id === "269530258267439115") {
-            let textsay = message.content.split(" ").slice(1);
-            let btmsg = textsay.join(" ");
-            message.delete().catch();
-            message.channel.send(btmsg);
-        }
-        break;
-        case "desc":
-        if (message.author.id === "213322033692409857") {
-            message.delete().catch();
-            message.guild.channels.find("id", "462949032226979850").sendMessage("Salutation chers élèves, je me nomme Nesturako Seijuro. Je suis professeur de programmation au lycée **Alafia**. Je suis encore en plein configuration par mon créateur donc si vous souhaitez m'aiderà en apprendre plus à mon sujet. Faites des suggestions sur ce que je pourrais faire, s'il vous plait ^^'");
-        }
-        break;
-    }
-})
-bot.on("message", function(message) {
-    if (message.author.equals(bot.user)) return;
-    if (!message.content.startsWith(prefix)) return;
-    var args = message.content.substring(prefix.length).split(" ");
-    switch (args[0].toLowerCase()) {
-    case "mpoll":
-        let args = message.content.split(" ").slice(1);
-        let choice = args.join(" ")
-        if (!choice) {
-            message.channel.send('Rentrez une question') 
-        } else if (message.author.id === "213322033692409857") {
-            const embed = new Discord.RichEmbed()
-            .setTitle("__**Sondage**__")
-            .addField("Tu préfères ? ", choice)
-            .setFooter('Choix 1: 1️⃣ ou Choix 2: 2️⃣')
-            .setColor('#FFB60B')
-            
-            message.channel.sendEmbed(embed)
-            .then(function (chcrct){
-            chcrct.react("1️⃣")
-            chcrct.react("2️⃣")
-            }) 
-        } else {
-            message.channel.send('Pas la permission') 
-        }
-        break;
-     case "serv":
-        const embed = new Discord.RichEmbed()
-        .setDescription ("**Information du Discord**")
-        .addField("__Nom du discord:__ ", message.guild.name)
-        .addField("Créer le ", "13 Décembre 2017")
-        .addField("Tu as rejoins le ", message.member.joinedAt)
-        .addField("__Utilisateur sur le discord:__ ", message.guild.memberCount)
-        .setColor("#D9C400")
-        message.channel.sendEmbed(embed) 
-    }
-})
-bot.on("message", function(message) {
-    if (message.author.equals(bot.user)) return;
-    if (!message.content.startsWith(prefix)) return;
-    var args = message.content.substring(prefix.length).split(" ");
-    switch (args[0].toLowerCase()) {  
+    break;
     case "roleclub":
-    if (message.author.id === "213322033692409857") {
-        const embed = new Discord.RichEmbed()
-        .addField('__Club otaku:__', "  :japan:", true)
-        .addField('__Club du jeu-vidéo:__', ":video_game:", true)
-        .addField('__Club de rôleplay:__', ":scroll:", true)
-        .addField('__Club du cinéma:__', ":clapper:", true)
-        .addField('__Club nature:__', ":sunrise_over_mountains:", true)
-        .addField('__Club de musique:__' , ":musical_keyboard: ", true)
-        .addField("__Club d'art:__" , ":art:", true)
-        .addField('__Club sportif:__', ":soccer:", true)
-        .addField('__Club de spammer:__', ":no_entry:", true)
-        .addField('__Etudiant:__', ":triangular_ruler:",true )
-        .setFooter('❗️ Rejoignez que 2 clubs maximum ❗️')
-        .setColor("#75D6FF")
+        if (message.author.id === "213322033692409857") {
+            const embed = new Discord.RichEmbed()
+            .addField('__Club otaku:__', "  :japan:", true)
+            .addField('__Club du jeu-vidéo:__', ":video_game:", true)
+            .addField('__Club de rôleplay:__', ":scroll:", true)
+            .addField('__Club du cinéma:__', ":clapper:", true)
+            .addField('__Club nature:__', ":sunrise_over_mountains:", true)
+            .addField('__Club de musique:__' , ":musical_keyboard: ", true)
+            .addField("__Club d'art:__" , ":art:", true)
+            .addField('__Club sportif:__', ":soccer:", true)
+            .addField('__Club de spammer:__', ":no_entry:", true)
+            .addField('__Etudiant:__', ":triangular_ruler:",true )
+            .setFooter('❗️ Rejoignez que 2 clubs maximum ❗️')
+            .setColor("#75D6FF")
         message.channel.sendEmbed(embed)
         } else {
             message.channel.send('Pas la permission')
         }
-        break;
-        case "invit":
-            message.channel.send('https://discord.gg/9Hy94Y4');
-        break;
+    break;
     case "rolespec":
-    if (message.author.id === "213322033692409857") {
+        if (message.author.id === "213322033692409857") {
         const embed = new Discord.RichEmbed()
         .addField('__**Love**__', ":heart:", true)
         .addField('__**Belge**__', ":fries:", true)
@@ -470,9 +385,90 @@ bot.on("message", function(message) {
         } else {
             message.channel.send('Pas la permission')
         }
-        break;
+    break;
+    case "serv":
+        const embed = new Discord.RichEmbed()
+        .setDescription ("**Information du Discord**")
+        .addField("__Nom du discord:__ ", message.guild.name)
+        .addField("Créer le ", "13 Décembre 2017")
+        .addField("Tu as rejoins le ", message.member.joinedAt)
+        .addField("__Utilisateur sur le discord:__ ", message.guild.memberCount)
+        .setColor("#D9C400")
+        message.channel.sendEmbed(embed)
+    break;
     }
 })
-   
+ 
+/* Commandes Utiles */
+bot.on("message", function(message) {
+    if (message.author.equals(bot.user)) return;
+    if (!message.content.startsWith(prefix)) return;
+    var args = message.content.substring(prefix.length).split(" ");
+    switch (args[0].toLowerCase()) { 
+    case "event":
+    let args = message.content.split(" ").slice(1);
+    let tte = args.join(" ")
+        if (!tte) {
+            message.channel.send('Rentrez une question') 
+        } else if (message.author.id === "213322033692409857" || message.author.id === "369914503892041730" || message.author.id === "316672290479931392" || message.author.id === "269530258267439115") {
+            const embed = new Discord.RichEmbed()
+            .setTitle("__**Evénement**__")
+            .addField("Question: ", tte)
+            .setFooter('Réagissez par ✅ ou ❌!')
+            .setColor('#FF800D')
+            
+            message.guild.channels.find("id", "480075582340595744").sendEmbed(embed)
+            .then(function (message){
+            message.react("✅")
+            message.react("❌")
+            }) 
+        } else {
+            message.channel.send('Pas la permission') 
+        }
+    break;
+    case "say":
+        if (message.author.id === "213322033692409857" || message.author.id === "369914503892041730" || message.author.id === "316672290479931392" || message.author.id === "269530258267439115") {
+            let textsay = message.content.split(" ").slice(1);
+            let btmsg = textsay.join(" ");
+            message.delete().catch();
+            message.channel.send(btmsg);
+        }
+    break;
+    case "invit":
+            message.channel.send('https://discord.gg/9Hy94Y4');
+    break;
+    case "desc":
+        if (message.author.id === "213322033692409857") {
+            message.delete().catch();
+            message.guild.channels.find("id", "462949032226979850").sendMessage("Salutation chers élèves, je me nomme Nesturako Seijuro. Je suis professeur de programmation au lycée **Alafia**. Je suis encore en plein configuration par mon créateur donc si vous souhaitez m'aiderà en apprendre plus à mon sujet. Faites des suggestions sur ce que je pourrais faire, s'il vous plait ^^'");
+        }
+    break;
+    case "ping":
+        message.channel.sendMessage("Temps de latence avec le serveur: `" + `${(Date.now () - message.createdTimestamp) / 100}` + "ms`");
+    break;
+    case "poll":
+    let args = message.content.split(" ").slice(1);
+    let tte = args.join(" ")
+        if (!tte) {
+            message.channel.send('Rentrez une question') 
+        } else if (message.author.id === "213322033692409857" || message.author.id === "369914503892041730" || message.author.id === "316672290479931392" || message.author.id === "269530258267439115") {
+            const embed = new Discord.RichEmbed()
+            .setTitle("__**Sondage**__")
+            .addField("Question: ", tte)
+            .setFooter('Réagissez par 1️⃣ ou 2️⃣ !')
+            .setColor('#FF800D')
+            
+            message.guild.channels.find("id", "480075582340595744").sendEmbed(embed)
+            .then(function (message){
+            message.react("1️⃣")
+            message.react("2️⃣")
+            }) 
+        } else {
+            message.channel.send('Pas la permission') 
+        }
+    break;
+    }
+})
+  
  /* Token */
 bot.login(process.env.TOKEN)
