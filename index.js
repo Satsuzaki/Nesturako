@@ -405,7 +405,7 @@ bot.on("message", function(message) {
     if (!message.content.startsWith(prefix)) return;
     var args = message.content.substring(prefix.length).split(" ");
     switch (args[0].toLowerCase()) { 
-    case "event":
+    case "poll":
     let args = message.content.split(" ").slice(1);
     let tte = args.join(" ")
         if (!tte) {
@@ -445,27 +445,6 @@ bot.on("message", function(message) {
     break;
     case "ping":
         message.channel.sendMessage("Temps de latence avec le serveur: `" + `${(Date.now () - message.createdTimestamp) / 100}` + "ms`");
-    break;
-    case "poll":
-    let args = message.content.split(" ").slice(1);
-    let tte = args.join(" ")
-        if (!tte) {
-            message.channel.send('Rentrez une question') 
-        } else if (message.author.id === "213322033692409857" || message.author.id === "369914503892041730" || message.author.id === "316672290479931392" || message.author.id === "269530258267439115") {
-            const embed = new Discord.RichEmbed()
-            .setTitle("__**Sondage**__")
-            .addField("Question: ", tte)
-            .setFooter('Réagissez par 1️⃣ ou 2️⃣ !')
-            .setColor('#FF800D')
-            
-            message.guild.channels.find("id", "480075582340595744").sendEmbed(embed)
-            .then(function (message){
-            message.react("1️⃣")
-            message.react("2️⃣")
-            }) 
-        } else {
-            message.channel.send('Pas la permission') 
-        }
     break;
     }
 })
