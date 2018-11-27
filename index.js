@@ -414,7 +414,7 @@ bot.on("message", function(message) {
             const embed = new Discord.RichEmbed()
             .setTitle("__**Sondage**__")
             .addField("Question: ", tte)
-            .setFooter('Réagissez par ✅ ou ❌!')
+            .setFooter("Réagissez par ✅ ou ❌, s'il vous plait!")
             .setColor('#FF800D')
             
             message.guild.channels.find("id", "480075582340595744").sendEmbed(embed)
