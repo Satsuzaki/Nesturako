@@ -361,7 +361,7 @@ bot.on("message", function(message) {
             message.channel.send('Pas la permission') 
         }
     break;
-    case "roleclub":
+    /*case "roleclub":
         if (message.author.id === "213322033692409857") {
             const embed = new Discord.RichEmbed()
             .addField('__Club otaku:__', "  :japan:", true)
@@ -379,22 +379,7 @@ bot.on("message", function(message) {
         } else {
             message.channel.send('Pas la permission')
         }
-    break;
-    case "rolespec":
-        if (message.author.id === "213322033692409857") {
-        const embed = new Discord.RichEmbed()
-        .addField('__**Love**__', ":heart:", true)
-        .addField('__**Belge**__', ":fries:", true)
-        .addField('__**Français**__', ":french_bread:", true)
-        .addField('__**Communiste**__', ":star:", true)
-        .addField('__**Capitaliste**__', ":dollar:", true)
-        .setFooter('❗️ 2 add-on maximum ❗️')
-        .setColor("#75D6FF")
-        message.channel.sendEmbed(embed)
-        } else {
-            message.channel.send('Pas la permission')
-        }
-    break;
+    break;*/
     case "serv":
         const embed = new Discord.RichEmbed()
         .setDescription ("**Information du Discord**")
@@ -460,4 +445,3 @@ bot.on("message", function(message) {
   
  /* Token */
 bot.login(process.env.TOKEN)
-
