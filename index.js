@@ -5,7 +5,7 @@ const prefix = '&';
  /* Lancement du Bot */
 bot.on('ready', () => {
     console.log('Bot activé')
-    bot.user.setGame('découvrir le monde')
+    bot.user.setGame("en cours d'informatique quantique")
 });
  /* Message de Bienvenue */
 bot.on('guildMemberAdd', member => {
@@ -175,27 +175,27 @@ bot.on("message", function(message) {
                 "fields": [
                     {
                     "name": "__📘 Classe-E__",
-                    "value": "• Classe du début (peu de permission)"
+                    "value": "• Classe du début (peu de permission, **1 club**)"
                     },
                     {
                     "name": "__📙 Classe-D__",
-                    "value": "• Lvl 5 (possibilité d'aller à l'extérieur du lycée)"
+                    "value": "• Lvl 5 (possibilité d'aller à l'extérieur du lycée, **1 club**)"
                     },
                     {
                     "name": "__📗 Classe-C__",
-                    "value": "• Lvl 10 (accès au <#468462827838111772>)"
+                    "value": "• Lvl 9 (accès au <#468462827838111772>, **2 club**)"
                     },
                     {
                     "name": "__📕 Classe-B__",
-                    "value": "• Lvl 15 (accès à des rôles spéciaux)"
+                    "value": "• Lvl 12 (Add-on = rôles spéciaux, **2 club**)"
                     },
                     {
                     "name": "__📒 Classe-A__",
-                    "value": "• Lvl 20 (permission à venir)"
+                    "value": "• Lvl 15 (permission à venir, **3 club**)"
                     },
                     {
                     "name": "__📓 Classe-S__",
-                    "value": "• Lvl 30 (rentrée non-obligatoire au Conseil de discipline)"
+                    "value": "• Classe réservée au membre influant du serveur (animateur et surveillant)"
                 }
             ]
         };
@@ -243,10 +243,6 @@ bot.on("message", function(message) {
                 "value": "• Pour les commentateurs/chroniqueurs en herbe"
                 },
                 {
-                "name": "__⛔ Spammer__",
-                "value": "• Spammez à votre guise (**vous ne gagnez pas d'xp dans votre channel**)"
-                },
-                {
                 "name": "__📐 Etudiant__",
                 "value": "• Si vous cherchez des conseils, de l'aide pour vos études"
                 }
@@ -260,20 +256,24 @@ bot.on("message", function(message) {
         case "infoimp":
         if (message.author.id === "213322033692409857") {
         const embed = {
-            "description": "Voici les personnes importantes du lycée",
+            "description": "Comité et Conseil des élèves",
             "color": 7722751,
             "fields": [
                 {
                 "name": "__🎤 Animateur__",
-                "value": "• Lvl 35 (peut créer des event temporaire)"
-                },
-                {
-                "name": "__📅 Organisateur__",
-                "value": "• Lvl 40 (création d'event & membre du Conseil)"
+                "value": "• Lvl 20: Coordonne les événements avec un organisateur (membre du Comité)"
                 },
                 {
                 "name": "__🛡️ Surveillant__",
-                "value": "• Modérateur des channels vocal/textuel (membre du Comité)"
+                "value": "• Lvl 25: Modérateur des channels vocal/textuel (membre du Comité)"
+                },
+                {
+                "name": "__📅 Organisateur__",
+                "value": "• Création et coordination des événements (membre du Comité)"
+                },
+                {
+                "name": "__📰 Journaliste__",
+                "value": "• S'occupe du journal du lycée (membre non-officiel du Conseil)"
                 },
                 {
                 "name": "__📁 Conseiller/💰 Trésorier/💼 Vice-président/📱 Président__",
@@ -289,7 +289,7 @@ bot.on("message", function(message) {
         case "infospec":
         if (message.author.id === "213322033692409857") {
         const embed = {
-            "description": "Les rôles spéciaux du moment",
+            "description": "Add-on",
                 "color": 7722751,
                 "footer": {
                     "text": "PS: De nouveaux rôles spéciaux viendront dans le futur"
@@ -297,14 +297,22 @@ bot.on("message", function(message) {
                 "fields": [
                     {
                     "name": "__🍟 Belge__",
-                    "value": "• Parce qu'on ne mange pas que des frites (pas tout le temps)"
+                    "value": "• Une frite, une fois ?"
                     },
                     {
                     "name": "__🥖 Français__",
                     "value": "• Pour tous les Bleu, blanc, rouge"
                     },
                     {
-                    "name": "__❤️ Love __",
+                    "name": "__💵 Capitaliste__",
+                    "value": "• Une frite, une fois ?"
+                    },
+                    {
+                    "name": "__⭐ Communiste__",
+                    "value": "• Pour tous les Bleu, blanc, rouge"
+                    },
+                    {
+                    "name": "__❤️ Love__",
                     "value": "• Un amour en tête ?"
                     }
                 ]
@@ -364,9 +372,8 @@ bot.on("message", function(message) {
             .addField('__Club de musique:__' , ":musical_keyboard: ", true)
             .addField("__Club d'art:__" , ":art:", true)
             .addField('__Club sportif:__', ":soccer:", true)
-            .addField('__Club de spammer:__', ":no_entry:", true)
             .addField('__Etudiant:__', ":triangular_ruler:",true )
-            .setFooter('❗️ Rejoignez que 2 clubs maximum ❗️')
+            .setFooter('❗️ Rejoignez le nombre de clubs maximum que votre classe permet ❗️')
             .setColor("#75D6FF")
         message.channel.sendEmbed(embed)
         } else {
@@ -379,7 +386,9 @@ bot.on("message", function(message) {
         .addField('__**Love**__', ":heart:", true)
         .addField('__**Belge**__', ":fries:", true)
         .addField('__**Français**__', ":french_bread:", true)
-        .setFooter('❗️ Rejoignez que 2 clubs maximum ❗️')
+        .addField('__**Communiste**__', ":star:", true)
+        .addField('__**Capitaliste**__', ":dollar:", true)
+        .setFooter('❗️ 2 add-on maximum ❗️')
         .setColor("#75D6FF")
         message.channel.sendEmbed(embed)
         } else {
@@ -414,7 +423,7 @@ bot.on("message", function(message) {
             const embed = new Discord.RichEmbed()
             .setTitle("__**Sondage**__")
             .addField("Question: ", tte)
-            .setFooter("Réagissez par ✅ ou ❌, s'il vous plait!")
+            .setFooter('Réagissez par ✅ ou ❌!')
             .setColor('#FF800D')
             
             message.guild.channels.find("id", "480075582340595744").sendEmbed(embed)
