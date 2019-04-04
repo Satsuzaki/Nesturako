@@ -305,11 +305,11 @@ bot.on("message", function(message) {
                     },
                     {
                     "name": "__💵 Capitaliste__",
-                    "value": "• Une frite, une fois ?"
+                    "value": "• Pognon, pognon, pognon"
                     },
                     {
                     "name": "__⭐ Communiste__",
-                    "value": "• Pour tous les Bleu, blanc, rouge"
+                    "value": "• Crie STALINE"
                     },
                     {
                     "name": "__❤️ Love__",
