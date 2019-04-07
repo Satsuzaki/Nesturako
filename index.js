@@ -2,6 +2,7 @@
 const Discord = require('discord.js')
 const bot = new Discord.Client()
 const prefix = '&';
+const userId = message.guild.members.find(m => m.id === "213322033692409857");
  /* Lancement du Bot */
 bot.on('ready', () => {
     console.log('Bot activé')
@@ -261,11 +262,11 @@ bot.on("message", function(message) {
             "fields": [
                 {
                 "name": "__🎤 Animateur__",
-                "value": "• Lvl 20: Coordonne les événements avec un organisateur (membre du Comité)"
+                "value": "• Lvl 30: Coordonne les événements avec un organisateur (membre du Comité)"
                 },
                 {
                 "name": "__🛡️ Surveillant__",
-                "value": "• Lvl 25: Modérateur des channels vocal/textuel (membre du Comité)"
+                "value": "• Lvl 35: Modérateur des channels vocal/textuel (membre du Comité)"
                 },
                 {
                 "name": "__📅 Organisateur__",
@@ -434,7 +435,7 @@ bot.on("message", function(message) {
     case "desc":
         if (message.author.id === "213322033692409857") {
             message.delete().catch();
-            message.guild.channels.find("id", "462949032226979850").sendMessage("Salutation chers élèves, je me nomme Nesturako Seijuro. Je suis professeur de programmation au lycée **Alafia**. Je suis encore à mes débuts dans ma carrière d'enseignant donc si vous avez des suggetions à faire. Faites les par mp à" + message.guild.members.get(213322033692409857) + ", s'il vous plait ^^'");
+            message.guild.channels.find("id", "462949032226979850").sendMessage("Salutation chers élèves, je me nomme Nesturako Seijuro. Je suis professeur de programmation au lycée **Alafia**. Je suis encore à mes débuts dans ma carrière d'enseignant donc si vous avez des suggetions à faire. Faites les par mp à" + userId + ", s'il vous plait ^^'");
         }
     break;
     case "ping":
