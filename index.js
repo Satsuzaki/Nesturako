@@ -2,17 +2,19 @@
 const Discord = require('discord.js')
 const bot = new Discord.Client()
 const prefix = '&';
-const userId = message.guild.members.find(m => m.id === "213322033692409857");
+
  /* Lancement du Bot */
 bot.on('ready', () => {
     console.log('Bot activé')
     bot.user.setGame("en cours d'informatique quantique")
 });
+
  /* Message de Bienvenue */
 bot.on('guildMemberAdd', member => {
     console.log('User ' + member.user.username + ' a rejoint le serveur!')
     member.guild.channels.get('462232742126419969').send('Bonjour ' + member + ', bienvenue au lycée **Alafia** :tada::hugging: !')
 });
+
  /* Commandes Embed */
 bot.on("message", function(message) {
     if (message.author.equals(bot.user)) return;
@@ -391,7 +393,7 @@ bot.on("message", function(message) {
         .setColor("#D9C400")
         message.channel.sendEmbed(embed)
     break;
-    case "name":
+    /*case "name":
         const embed = new Discord.RichEmbed()
         .setDescription ("**Nom du serveur*")
         .addField("Lycée **Alafia**")
@@ -399,7 +401,7 @@ bot.on("message", function(message) {
         .addField('Pourquoi ? Soon 😉')
         .setColor("#D9C400")
         message.channel.sendEmbed(embed)
-    break;
+    break;*/
     }
 })
  
