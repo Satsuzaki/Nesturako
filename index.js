@@ -191,7 +191,7 @@ bot.on("message", function(message) {
                     },
                     {
                     "name": "__📒 Classe-A__",
-                    "value": "• Lvl 15 (permission à venir, **3 club**)"
+                    "value": "• Lvl 15 (possibilité d'accès à toutes les classes en dessous, **3 club**)"
                     },
                     {
                     "name": "__📓 Classe-S__",
