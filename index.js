@@ -364,6 +364,15 @@ bot.on("message", function(message) {
             message.channel.send('Pas la permission') 
         }
     break;
+    case "name":
+        const embed = new Discord.RichEmbed()
+        .setDescription ("**Nom du serveur*")
+        .addField("Lycée **Alafia**")
+        .addField('Alafia signifie "Paix" en Yoruba')
+        .addField('Pourquoi ? Soon 😉')
+        .setColor("#D9C400")
+        message.channel.sendEmbed(embed)
+    break;
     /*case "roleclub":
         if (message.author.id === "213322033692409857") {
             const embed = new Discord.RichEmbed()
@@ -393,15 +402,6 @@ bot.on("message", function(message) {
         .setColor("#D9C400")
         message.channel.sendEmbed(embed)
     break;
-    /*case "name":
-        const embed = new Discord.RichEmbed()
-        .setDescription ("**Nom du serveur*")
-        .addField("Lycée **Alafia**")
-        .addField('Alafia signifie "Paix" en Yoruba')
-        .addField('Pourquoi ? Soon 😉')
-        .setColor("#D9C400")
-        message.channel.sendEmbed(embed)
-    break;*/
     }
 })
  
