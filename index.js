@@ -393,7 +393,7 @@ bot.on("message", function(message) {
         .setColor("#D9C400")
         message.channel.sendEmbed(embed)
     break;
-    /*case "name":
+    case "name":
         const embed = new Discord.RichEmbed()
         .setDescription ("**Nom du serveur*")
         .addField("Lycée **Alafia**")
@@ -401,7 +401,7 @@ bot.on("message", function(message) {
         .addField('Pourquoi ? Soon 😉')
         .setColor("#D9C400")
         message.channel.sendEmbed(embed)
-    break;*/
+    break;
     }
 })
  
