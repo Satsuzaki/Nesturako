@@ -161,6 +161,10 @@ bot.on("message", function(message) {
                   },
                   {
                     "name": ":white_small_square:__Règle 20:__",
+                    "value": "• Exploitation de failles consciemment est interdite !."
+                  },
+                  {
+                    "name": ":white_small_square:__Règle 21:__",
                     "value": "• En message privé si elle n’est pas sollicitée par la personne recevant le message."
                   }
                 ]
@@ -182,19 +186,19 @@ bot.on("message", function(message) {
                     },
                     {
                     "name": "__📙 Classe-D__",
-                    "value": "• Lvl 5 (possibilité d'aller à l'extérieur du lycée, **1 club**)"
+                    "value": "• Lvl 7 (possibilité d'aller à l'extérieur du lycée, **2 club**)"
                     },
                     {
                     "name": "__📗 Classe-C__",
-                    "value": "• Lvl 9 (accès au <#468462827838111772>, **2 club**)"
+                    "value": "• Lvl 14 (accès au <#468462827838111772>, **2 club**)"
                     },
                     {
                     "name": "__📕 Classe-B__",
-                    "value": "• Lvl 12 (Add-on = rôles spéciaux, **2 club**)"
+                    "value": "• Lvl 21 (Add-on = rôles spéciaux, **3 club**)"
                     },
                     {
                     "name": "__📒 Classe-A__",
-                    "value": "• Lvl 15 (possibilité d'accès à toutes les classes en dessous, **3 club**)"
+                    "value": "• Lvl 28 (possibilité d'accès à toutes les classes en dessous, **3 club**)"
                     },
                     {
                     "name": "__📓 Classe-S__",
@@ -300,23 +304,23 @@ bot.on("message", function(message) {
                 "fields": [
                     {
                     "name": "__🍟 Belge__",
-                    "value": "• Une frite, une fois ?"
+                    "value": "• Une frite, une fois (<#464179853973913612>) ?"
                     },
                     {
                     "name": "__🥖 Français__",
-                    "value": "• Pour tous les Bleu, blanc, rouge"
+                    "value": "• Pour tous les Bleu, blanc, rouge (<#464179853973913612>)"
                     },
                     {
                     "name": "__💵 Capitaliste__",
-                    "value": "• Pognon, pognon, pognon"
+                    "value": "• Pognon, pognon, pognon (<#462924323414343681>) !"
                     },
                     {
                     "name": "__⭐ Communiste__",
-                    "value": "• Crie STALINE"
+                    "value": "• Crie STALINE (<#462924323414343681>) !"
                     },
                     {
                     "name": "__❤️ Love__",
-                    "value": "• Un amour en tête ?"
+                    "value": "• Un amour en tête (<#464179853973913612>) ?"
                     }
                 ]
         };
