@@ -316,15 +316,15 @@ bot.on("message", function(message) {
                     },
                     {
                     "name": "__💵 Capitaliste__",
-                    "value": "• Pognon, pognon, pognon ( <#462924323414343681> ) !"
+                    "value": "• Pognon, pognon, pognon ( <#462923863995580416> ) !"
                     },
                     {
                     "name": "__⭐ Communiste__",
-                    "value": "• Crie STALINE ( <#462924323414343681> ) !"
+                    "value": "• Crie STALINE ( <#462923863995580416> ) !"
                     },
                     {
                     "name": "__👮🏻 Fasciste__",
-                    "value": "• Hail Hydra ( <#462924323414343681> ) !"
+                    "value": "• Hail Hydra ( <#462923863995580416> ) !"
                     }
                 ]
         };
