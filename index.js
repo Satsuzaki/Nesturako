@@ -300,7 +300,7 @@ bot.on("message", function(message) {
                 "fields": [
                     {
                     "name": "__🍟 Belge__",
-                    "value": "• Une frite, une fois ( <#4464179763498582016> ) ?"
+                    "value": "• Une frite, une fois ( <#464179763498582016> ) ?"
                     },
                     {
                     "name": "__🥖 Français__",
@@ -450,10 +450,9 @@ bot.on("message", function(message) {
     break;
     case "story":
         const embed = new Discord.RichEmbed()
-        .setDescription ('Nom du serveur')
-        .addField('Lycée **Alafia**')
-        .addField('Alafia signifie "Paix" en Yoruba')
-        .addField('Pourquoi ? Soon 😉')
+        .addField('Nom du serveur:', 'Lycée **Alafia**')
+        .addField('Signfication:', '"Paix" en Yoruba')
+        .addField('Pourquoi ?', 'Soon 😉')
         .setColor("#D9C400")
         message.channel.sendEmbed(embed)
     break;
