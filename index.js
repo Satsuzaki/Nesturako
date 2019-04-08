@@ -66,7 +66,11 @@ bot.on("message", function(message) {
                 {
                 "name": ":white_small_square:__Règle 6:__",
                 "value": "• Le contournement de mute, ban, et autres sanctions."
-                }
+                },
+                {
+                "name": ":white_small_square:__Règle 7:__",
+                "value": "• Exploitation de failles consciemment est interdite !"
+                },
             ]
             };
             message.guild.channels.find("id", "462927679533088768").sendEmbed(embed)
@@ -81,27 +85,27 @@ bot.on("message", function(message) {
                 "color": 9109504,
                 "fields": [
                   {
-                    "name": ":white_small_square:__Règle 7:__",
+                    "name": ":white_small_square:__Règle 8:__",
                     "value": "• Evitez d’utiliser le langage SMS."
                   },
                   {
-                    "name": ":white_small_square:__Règle 8:__",
+                    "name": ":white_small_square:__Règle 9:__",
                     "value": "• Les insultes, y compris vis-à-vis de vos amis, ne sont pas tolérées."
                   },
                   {
-                    "name": ":white_small_square:__Règle 9:__",
+                    "name": ":white_small_square:__Règle 10:__",
                     "value": "• Il est interdit de spam, le bot peut vous mute automatiquement si ce n’est pas un modérateur qui s’en occupe."
                   },
                   {
-                    "name": ":white_small_square:__Règle 10:__",
+                    "name": ":white_small_square:__Règle 11:__",
                     "value": "• N’abusez pas des mentions inutiles d’une ou plusieurs personnes."
                   },
                   {
-                    "name": ":white_small_square:__Règle 11:__",
+                    "name": ":white_small_square:__Règle 12:__",
                     "value": "• Evitez d’utiliser les majuscules pour écrire un message, cela équivaut à crier et pourrait déranger les autres membres du serveur."
                   },
                   {
-                    "name": ":white_small_square:__Règle 12:__",
+                    "name": ":white_small_square:__Règle 13:__",
                     "value": "• Utilisez les salons appropriés pour le spam (<#463025770483417097>, <#462960550641664011>, etc…)"
                   }
                 ]
@@ -118,23 +122,23 @@ bot.on("message", function(message) {
                 "color": 9109504,
                 "fields": [
                   {
-                    "name": ":white_small_square:__Règle 13:__",
+                    "name": ":white_small_square:__Règle 14:__",
                     "value": "• Il est interdit d’insulter dans les salons vocaux, même après une énième défaite sur League of Legends."
                   },
                   {
-                    "name": ":white_small_square:__Règle 14:__",
+                    "name": ":white_small_square:__Règle 15:__",
                     "value": "• Il est interdit de faire des bruits pouvant nuire aux tympans des personnes présentes dans le salon."
                   },
                   {
-                    "name": ":white_small_square:__Règle 15:__",
+                    "name": ":white_small_square:__Règle 16:__",
                     "value": "• Eviter de parler dans le salon musique lorsque vous y entrez, certaines personnes écoutent leurs musiques calmement et ne souhaitent pas être dérangées."
                   },
                   {
-                    "name": ":white_small_square:__Règle 16:__",
+                    "name": ":white_small_square:__Règle 17:__",
                     "value": "• Il est interdit de switch de salon de façon répétée dans le seul but de générer une notification sonore à ceux présents dans le salon. "
                   },
                   {
-                    "name": ":white_small_square:__Règle 17:__",
+                    "name": ":white_small_square:__Règle 18:__",
                     "value": "• L’utilisation de SoundBox est prohibée."
                   }
                 ]
@@ -152,16 +156,12 @@ bot.on("message", function(message) {
                 "color": 9109504,
                 "fields": [
                   {
-                    "name": ":white_small_square:__Règle 18:__",
+                    "name": ":white_small_square:__Règle 19:__",
                     "value": "• Vers d’autres serveurs discord."
                   },
                   {
-                    "name": ":white_small_square:__Règle 19:__",
-                    "value": "• Pour vos serveurs de jeu (si la demande n'a pas été accepté par un membre du conseil)."
-                  },
-                  {
                     "name": ":white_small_square:__Règle 20:__",
-                    "value": "• Exploitation de failles consciemment est interdite !."
+                    "value": "• Pour vos serveurs de jeu (si la demande n'a pas été accepté par un membre du conseil)."
                   },
                   {
                     "name": ":white_small_square:__Règle 21:__",
