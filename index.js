@@ -372,7 +372,7 @@ bot.on("message", function(message) {
             message.channel.send('Pas la permission') 
         }
     break;
-    case "name":
+    /*case "name":
         const embed = new Discord.RichEmbed()
         .setDescription ('**Nom du serveur*')
         .addField('Lycée **Alafia**')
@@ -380,7 +380,7 @@ bot.on("message", function(message) {
         .addField('Pourquoi ? Soon 😉')
         .setColor("#D9C400")
         message.channel.sendEmbed(embed)
-    break;
+    break;*/
     /*case "roleclub":
         if (message.author.id === "213322033692409857") {
             const embed = new Discord.RichEmbed()
