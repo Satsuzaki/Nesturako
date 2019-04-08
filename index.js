@@ -445,7 +445,7 @@ bot.on("message", function(message) {
     case "desc":
         if (message.author.id === "213322033692409857") {
             message.delete().catch();
-            message.guild.channels.find("id", "462949032226979850").sendMessage("Salutation chers élèves, je me nomme Nesturako Seijuro. Je suis professeur de programmation au lycée **Alafia**. Je suis encore à mes débuts dans ma carrière d'enseignant donc si vous avez des suggetions à faire. Faites les par mp à ... , s'il vous plait ^^'");
+            message.guild.channels.find("id", "462949032226979850").sendMessage("Salutation chers élèves, je me nomme Nesturako Seijuro. Je suis professeur de programmation au lycée **Alafia**. Je suis encore à mes débuts dans ma carrière d'enseignant donc si vous avez des suggetions à faire. Faites les par mp à <@213322033692409857> , s'il vous plait ^^'");
         }
     break;
     case "story":
@@ -455,6 +455,10 @@ bot.on("message", function(message) {
         .addField('Pourquoi ?', 'Soon 😉')
         .setColor("#D9C400")
         message.channel.sendEmbed(embed)
+    break;
+    case "helpop":
+        message.delete().catch();
+        message.guild.channels.find("id", "462928491831230484").sendMessage(/*<@369914503892041730> , <@316672290479931392> ,*/"<@269530258267439115> et <@213322033692409857>: " + message.member.toString() + " à besoin d'aide !");
     break;
     case "ping":
         message.channel.sendMessage("Temps de latence avec le serveur: `" + `${(Date.now () - message.createdTimestamp) / 100}` + "ms`");
