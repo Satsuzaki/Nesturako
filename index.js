@@ -458,7 +458,7 @@ bot.on("message", function(message) {
     break;
     case "helpop":
         message.delete().catch();
-        message.guild.channels.find("id", "462928491831230484").sendMessage(/*<@369914503892041730> , <@316672290479931392> ,*/"<@269530258267439115> et <@213322033692409857>: " + message.member.toString() + " à besoin d'aide !");
+        message.guild.channels.find("id", "462928491831230484").sendMessage(/*<@369914503892041730> , <@316672290479931392> ,*/"<@&462952083746717697> et <@&462952216064425984>: " + message.member.toString() + " à besoin d'aide !");
     break;
     case "ping":
         message.channel.sendMessage("Temps de latence avec le serveur: `" + `${(Date.now () - message.createdTimestamp) / 100}` + "ms`");
