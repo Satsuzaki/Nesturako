@@ -186,15 +186,15 @@ bot.on("message", function(message) {
                     },
                     {
                     "name": "__📙 Classe-D__",
-                    "value": "• Lvl 7 (possibilité d'aller à l'extérieur du lycée, **2 club**)"
+                    "value": "• Lvl 7 (accès à l'extérieur du lycée + Add-on n°1, **2 club**)"
                     },
                     {
                     "name": "__📗 Classe-C__",
-                    "value": "• Lvl 14 (accès au <#468462827838111772>, **2 club**)"
+                    "value": "• Lvl 14 (possibilité d'accès au <#468462827838111772> -> Add-on n°2, **2 club**)"
                     },
                     {
                     "name": "__📕 Classe-B__",
-                    "value": "• Lvl 21 (Add-on = rôles spéciaux, **3 club**)"
+                    "value": "• Lvl 21 (Add-on n°3, **3 club**)"
                     },
                     {
                     "name": "__📒 Classe-A__",
@@ -279,11 +279,7 @@ bot.on("message", function(message) {
                 "value": "• Création et coordination des événements (membre du Comité)"
                 },
                 {
-                "name": "__📰 Journaliste__",
-                "value": "• S'occupe du journal du lycée (membre non-officiel du Conseil)"
-                },
-                {
-                "name": "__📁 Conseiller/💰 Trésorier/💼 Vice-président/📱 Président__",
+                "name": "__📰 Journaliste/📁 Conseiller/💰 Trésorier/💼 Vice-président/📱 Président__",
                 "value": "• Staff (membre officiel du Conseil)"
                 }
             ]
@@ -299,28 +295,36 @@ bot.on("message", function(message) {
             "description": "Add-on",
                 "color": 7722751,
                 "footer": {
-                    "text": "PS: De nouveaux rôles spéciaux viendront dans le futur"
+                    "text": "PS: De nouveaux rôles spéciaux viendront **certainement** dans le futur"
                 },
                 "fields": [
                     {
                     "name": "__🍟 Belge__",
-                    "value": "• Une frite, une fois (<#464179853973913612>) ?"
+                    "value": "• Une frite, une fois ( <#4464179763498582016> ) ?"
                     },
                     {
                     "name": "__🥖 Français__",
-                    "value": "• Pour tous les Bleu, blanc, rouge (<#464179853973913612>)"
-                    },
-                    {
-                    "name": "__💵 Capitaliste__",
-                    "value": "• Pognon, pognon, pognon (<#462924323414343681>) !"
-                    },
-                    {
-                    "name": "__⭐ Communiste__",
-                    "value": "• Crie STALINE (<#462924323414343681>) !"
+                    "value": "• Pour tous les Bleu, blanc, rouge ( <#464179763498582016> )"
                     },
                     {
                     "name": "__❤️ Love__",
-                    "value": "• Un amour en tête (<#464179853973913612>) ?"
+                    "value": "• Un amour en tête ( <#462923891724255243> ) ?"
+                    },
+                    {
+                    "name": "__🔞 Nsfw__",
+                    "value": "• ... ( <#462923891724255243> ) ?"
+                    },
+                    {
+                    "name": "__💵 Capitaliste__",
+                    "value": "• Pognon, pognon, pognon ( <#462924323414343681> ) !"
+                    },
+                    {
+                    "name": "__⭐ Communiste__",
+                    "value": "• Crie STALINE ( <#462924323414343681> ) !"
+                    },
+                    {
+                    "name": "__👮🏻 Fasciste__",
+                    "value": "• Hail Hydra ( <#462924323414343681> ) !"
                     }
                 ]
         };
@@ -355,7 +359,7 @@ bot.on("message", function(message) {
                     },
                     {
                         "name": ":white_small_square:__Conseil 2:__",
-                        "value": "• Pour évitez tout spam, un seul message par minute vous donnera de l'xp."
+                        "value": "• Pour évitez tout spam, plus le message est construit, plus il y a de chance de gagner le maximum d'xp."
                     },
                     {
                         "name": ":white_small_square:__Conseil 3:__",
@@ -368,15 +372,15 @@ bot.on("message", function(message) {
             message.channel.send('Pas la permission') 
         }
     break;
-    /*case "name":
+    case "name":
         const embed = new Discord.RichEmbed()
-        .setDescription ("**Nom du serveur*")
-        .addField("Lycée **Alafia**")
+        .setDescription ('**Nom du serveur*')
+        .addField('Lycée **Alafia**')
         .addField('Alafia signifie "Paix" en Yoruba')
         .addField('Pourquoi ? Soon 😉')
         .setColor("#D9C400")
         message.channel.sendEmbed(embed)
-    break;*/
+    break;
     /*case "roleclub":
         if (message.author.id === "213322033692409857") {
             const embed = new Discord.RichEmbed()
