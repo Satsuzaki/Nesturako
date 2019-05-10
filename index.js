@@ -226,10 +226,6 @@ bot.on("message", function(message) {
                 "value": "• Pour toutes les personnes cherchant des potes pour jouer"
                 },
                 {
-                "name": "__📜 Rôleplayer__",
-                "value": "• Si vous aimez les rencontres Rp. A vous de créez"
-                },
-                {
                 "name": "__🎬 Cinéphile__",
                 "value": "• Pour tous les mordus du 7ème Art"
                 },
@@ -343,7 +339,7 @@ bot.on("message", function(message) {
                     "description": "Explication des channels, ici",
                     "color": 9109504,
                     "image": {
-                      "url": "https://cdn.discordapp.com/attachments/394535366650101770/486830675480281098/Capture.PNG"
+                        "url": "https://cdn.discordapp.com/attachments/394535366650101770/486830675480281098/Capture.PNG"
                     }
                   };
             message.guild.channels.find("id", "462927679533088768").sendEmbed(embed)
@@ -357,18 +353,18 @@ bot.on("message", function(message) {
                 "title": ":arrow_right: __**Comment XP avec Hatchi ?**__",
                     "color": 7722751,
                     "fields": [
-                    {
-                        "name": ":white_small_square:__Conseil 1:__",
-                        "value": "• Dès que vous postez un message, celui-ci vous donnera une valeur aléatoire en 15-25 d'xp."
-                    },
-                    {
-                        "name": ":white_small_square:__Conseil 2:__",
-                        "value": "• Pour évitez tout spam, plus le message est construit, plus il y a de chance de gagner le maximum d'xp."
-                    },
-                    {
-                        "name": ":white_small_square:__Conseil 3:__",
-                        "value": "• Pour voir votre niveau, faites **!rank** dans les channels prévus à cet effet."
-                    }
+                        {
+                            "name": ":white_small_square:__Conseil 1:__",
+                            "value": "• Dès que vous postez un message, celui-ci vous donnera une valeur aléatoire en 15-25 d'xp."
+                        },
+                        {
+                            "name": ":white_small_square:__Conseil 2:__",
+                            "value": "• Pour évitez tout spam, plus le message est construit, plus il y a de chance de gagner le maximum d'xp."
+                        },
+                        {
+                            "name": ":white_small_square:__Conseil 3:__",
+                            "value": "• Pour voir votre niveau, faites **!rank** dans les channels prévus à cet effet."
+                        }
                     ]
                 };
             message.guild.channels.find("id", "462927679533088768").sendEmbed(embed)
@@ -430,9 +426,9 @@ bot.on("message", function(message) {
                     ]
                 };
             message.guild.channels.find("id", "462927679533088768").sendEmbed(embed)
-            } else {
-                message.channel.send('Pas la permission') 
-            }
+        } else {
+            message.channel.send('Pas la permission') 
+        }
     break;
     }
 })
