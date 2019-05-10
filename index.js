@@ -202,7 +202,7 @@ bot.on("message", function(message) {
                     },
                     {
                     "name": "__📓 Classe-S__",
-                    "value": "• Classe réservée au membre influant du serveur (animateur et surveillant)"
+                    "value": "• Classe disponible sous candidature du serveur"
                 }
             ]
         };
@@ -248,10 +248,6 @@ bot.on("message", function(message) {
                 {
                 "name": "__⚽ Sportif__",
                 "value": "• Pour les commentateurs/chroniqueurs en herbe"
-                },
-                {
-                "name": "__📐 Etudiant__",
-                "value": "• Si vous cherchez des conseils, de l'aide pour vos études"
                 }
             ]
         };
@@ -263,7 +259,7 @@ bot.on("message", function(message) {
         case "infoimp":
         if (message.author.id === "213322033692409857") {
         const embed = {
-            "description": "Comité et Conseil des élèves",
+            "title": "**__Comité et Conseil des élèves__**",
             "color": 7722751,
             "fields": [
                 {
@@ -292,7 +288,7 @@ bot.on("message", function(message) {
         case "infospec":
         if (message.author.id === "213322033692409857") {
         const embed = {
-            "description": "Add-on",
+            "title": "**__Add-on__**",
                 "color": 7722751,
                 "footer": {
                     "text": "PS: De nouveaux rôles spéciaux viendront **certainement** dans le futur"
@@ -307,12 +303,20 @@ bot.on("message", function(message) {
                     "value": "• Pour tous les Bleu, blanc, rouge ( <#464179763498582016> )"
                     },
                     {
+                    "name": "__🏳️‍🌈  LGBTQ+__",
+                    "value": "• Pour tous les Bleu, blanc, rouge ( <#464179763498582016> )"
+                    },
+                    {
                     "name": "__❤️ Love__",
                     "value": "• Un amour en tête ( <#462923891724255243> ) ?"
                     },
                     {
                     "name": "__🔞 Nsfw__",
                     "value": "• ... ( <#462923891724255243> ) ?"
+                    },
+                    {
+                    "name": "__📐 Etudiant__",
+                    "value": "• Si vous cherchez des conseils, de l'aide pour vos études ( <#462923891724255243> )"
                     },
                     {
                     "name": "__💵 Capitaliste__",
@@ -350,7 +354,7 @@ bot.on("message", function(message) {
         case "infoxp":
             if (message.author.id === "213322033692409857") {
             const embed = {
-                "title": ":arrow_right: __Comment XP avec Hatchi ?__",
+                "title": ":arrow_right: __**Comment XP avec Hatchi ?**__",
                     "color": 7722751,
                     "fields": [
                     {
@@ -372,34 +376,63 @@ bot.on("message", function(message) {
             message.channel.send('Pas la permission') 
         }
     break;
-    /*case "roleclub":
-        if (message.author.id === "213322033692409857") {
-            const embed = new Discord.RichEmbed()
-            .addField('__Club otaku:__', "  :japan:", true)
-            .addField('__Club du jeu-vidéo:__', ":video_game:", true)
-            .addField('__Club de rôleplay:__', ":scroll:", true)
-            .addField('__Club du cinéma:__', ":clapper:", true)
-            .addField('__Club nature:__', ":sunrise_over_mountains:", true)
-            .addField('__Club de musique:__' , ":musical_keyboard: ", true)
-            .addField("__Club d'art:__" , ":art:", true)
-            .addField('__Club sportif:__', ":soccer:", true)
-            .addField('__Etudiant:__', ":triangular_ruler:",true )
-            .setFooter('❗️ Rejoignez le nombre de clubs maximum que votre classe permet ❗️')
-            .setColor("#75D6FF")
-        message.channel.sendEmbed(embed)
+    case "infohier":
+            if (message.author.id === "213322033692409857") {
+            const embed = {
+                "title": ":arrow_right: __**Hiérarchie en place au Lycée**__",
+                    "color": 9109504,
+                    "footer": 
+                    {
+                        "text": "PS: La hiéarché n'inclue pas les add-on car ceux-ci n'apportent pas de permission en plus (la majorité)"
+                    },
+                    "fields": [
+                    {
+                        "name": ":white_small_square:__Staff:__",
+                        "value": "• Président, Vice-Président, Trésorier, Conseiller et Journaliste"
+                    },
+                    {
+                        "name": ":white_small_square:__Comité:__",
+                        "value": "• Responsable/Président de Club, Surveillant, Animateur"
+                    },
+                    {
+                        "name": ":white_small_square:__Elite:__",
+                        "value": "• Gérant du Maid-Café et classe S"
+                    },
+                    {
+                        "name": ":white_small_square:__Membre:__",
+                        "value": "• Maid, Classe A, classe B, classe C et classe E"
+                    },
+                    {
+                        "name": ":white_small_square:__Puni:__",
+                        "value": "• Mute/En retenue"
+                    }
+                    ]
+                };
+            message.guild.channels.find("id", "462927679533088768").sendEmbed(embed)
         } else {
-            message.channel.send('Pas la permission')
+            message.channel.send('Pas la permission') 
         }
-    break;*/
-    case "serv":
-        const embed = new Discord.RichEmbed()
-        .setDescription ("**Information du Discord**")
-        .addField("__Nom du discord:__ ", message.guild.name)
-        .addField("Créer le ", "13 Décembre 2017")
-        .addField("Tu as rejoins le ", message.member.joinedAt)
-        .addField("__Utilisateur sur le discord:__ ", message.guild.memberCount)
-        .setColor("#D9C400")
-        message.channel.sendEmbed(embed)
+    break;
+    case "infoS":
+        if (message.author.id === "213322033692409857") {
+            const embed = {
+                    "title": "__**Passage en Classe S**__",
+                    "color": 9109504,
+                    "footer": 
+                    {
+                        "text": "Conseil: Faites d'abord vos preuves/investissez-vous au sein de la communauté 😉"
+                    },
+                    "fields": [
+                    {
+                        "name": "Comment passer en classe S ?",
+                        "value": "• Envoyer un mp à un membre du staff suivi d'une présentation/candidature, s'il vous plait"
+                    }
+                    ]
+                };
+            message.guild.channels.find("id", "462927679533088768").sendEmbed(embed)
+            } else {
+                message.channel.send('Pas la permission') 
+            }
     break;
     }
 })
@@ -462,6 +495,16 @@ bot.on("message", function(message) {
     break;
     case "ping":
         message.channel.sendMessage("Temps de latence avec le serveur: `" + `${(Date.now () - message.createdTimestamp) / 100}` + "ms`");
+    break;
+    case "serv":
+        const embed = new Discord.RichEmbed()
+        .setDescription ("**Information du Discord**")
+        .addField("__Nom du discord:__ ", message.guild.name)
+        .addField("Créer le ", "13 Décembre 2017")
+        .addField("Tu as rejoins le ", message.member.joinedAt)
+        .addField("__Utilisateur sur le discord:__ ", message.guild.memberCount)
+        .setColor("#D9C400")
+        message.channel.sendEmbed(embed)
     break;
     }
 })
