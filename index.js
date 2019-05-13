@@ -3,20 +3,19 @@ const Discord = require('discord.js')
 const bot = new Discord.Client()
 const prefix = '&';
 
- /* Lancement du Bot */
+/* Lancement du Bot */
 bot.on('ready', () => {
     console.log('Bot activé')
-    bot.user.setGame("en cours d'informatique quantique")
+    bot.user.setGame("en maintenance")
 });
 
- /* Message de Bienvenue */
+/* Message de Bienvenue */
 bot.on('guildMemberAdd', member => {
     console.log('User ' + member.user.username + ' a rejoint le serveur!')
     member.guild.channels.get('462232742126419969').send('Bonjour ' + member + ', bienvenue au lycée **Alafia** :tada::hugging: !')
 });
 
- /* Commandes Embed */
- /*
+/* Commandes Embed */
 bot.on("message", function(message) 
 {
     if (message.author.equals(bot.user)) return;
@@ -201,8 +200,6 @@ bot.on("message", function(message)
             message.channel.send('Pas la permission') 
         }
         break;
-        */
-        /*
         case "infoclasse":
         if (message.author.id === "213322033692409857") 
         {
@@ -245,8 +242,6 @@ bot.on("message", function(message)
             message.channel.send('Pas la permission') 
         }
         break;
-        */
-        /*
         case "infoclub":
         if (message.author.id === "213322033692409857") 
         {
@@ -293,8 +288,6 @@ bot.on("message", function(message)
             message.channel.send('Pas la permission') 
         }
         break;
-        */
-       /*
         case "infoimp":
         if (message.author.id === "213322033692409857") 
         {
@@ -329,8 +322,6 @@ bot.on("message", function(message)
             message.channel.send('Pas la permission') 
         }
         break;
-        */
-        /*
         case "infospec":
         if (message.author.id === "213322033692409857") 
         {
@@ -389,8 +380,6 @@ bot.on("message", function(message)
             message.channel.send('Pas la permission') 
         }
         break;
-        */
-       /*
         case "infochan":
         if (message.author.id === "213322033692409857") 
         {
@@ -440,8 +429,6 @@ bot.on("message", function(message)
             message.channel.send('Pas la permission') 
         }
         break;
-        */
-        /*
         case "infohier":
         if (message.author.id === "213322033692409857") 
         {
@@ -513,8 +500,8 @@ bot.on("message", function(message)
     
     }
 })
-*/
 /* Commandes Utiles */
+/*
 bot.on("message", function(message) 
     {
     if (message.author.equals(bot.user)) return;
@@ -574,7 +561,7 @@ bot.on("message", function(message)
     break;
     case "helpop":
         message.delete().catch();
-        message.guild.channels.find("id", "462928491831230484").sendMessage(/*<@369914503892041730> , <@316672290479931392> ,*/"<@&462952083746717697> et <@&462952216064425984>: " + message.member.toString() + " à besoin d'aide !");
+        message.guild.channels.find("id", "462928491831230484").sendMessage(/*<@369914503892041730> , <@316672290479931392> ,"<@&462952083746717697> et <@&462952216064425984>: " + message.member.toString() + " à besoin d'aide !");
     break;
     case "ping":
         message.channel.sendMessage("Temps de latence avec le serveur: `" + `${(Date.now () - message.createdTimestamp) / 100}` + "ms`");
@@ -590,6 +577,6 @@ bot.on("message", function(message)
         message.channel.sendEmbed(embed)
     }
 })
-  
+*/
  /* Token */
 bot.login(process.env.TOKEN)
