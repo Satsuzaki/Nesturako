@@ -490,7 +490,7 @@ bot.on("message", function(message)
                     }
                 ]
             };
-            message.guild.channels.find("id", "462927679533088768").sendEmbed(embed)
+            message.guild.channels.find("id", "462923821801013249").sendEmbed(embed)
         } 
         else 
         {
