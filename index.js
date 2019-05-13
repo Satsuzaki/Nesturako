@@ -6,7 +6,7 @@ const prefix = '&';
  /* Lancement du Bot */
 bot.on('ready', () => {
     console.log('Bot activé')
-    bot.user.setGame("en cours d'informatique quantique")
+    bot.user.setGame("en maintenance")
 });
 
  /* Message de Bienvenue */
