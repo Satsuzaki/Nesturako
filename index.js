@@ -471,7 +471,7 @@ bot.on("message", function(message)
             message.channel.send('Pas la permission') 
         }
     break;
-    case "infoS":
+    case "infoPromot":
         if (message.author.id === "213322033692409857")
         {
             const embed = 
