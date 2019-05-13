@@ -23,14 +23,14 @@ bot.on("message", function(message)
     var args = message.content.substring(prefix.length).split(" ");
     switch (args[0].toLowerCase()) 
     {
-        case "regle":
+        case "regle0":
         if (message.author.id === "213322033692409857") 
         {
             const embed = 
             {
                     "title": ":exclamation:__**Règlement**__:exclamation:",
                     "description": "La communauté possède un règlement qui se doit d’être respecté, afin de maintenir une bonne ambiance au sein du serveur. Toute infraction au règlement résultera à une sanction adaptée à la gravité de vos actes. Le staff se réserve le droit s’il en juge nécessaire, de sanctionner tout comportement incorrect, même si celui-ci ne rentre pas dans le règlement.",
-                    "color": 9109504,
+                    "color": "810020",
                     "footer": 
                     {
                     "text": "PS: Les règles sont sujettes à adaptations et changements dans le futur, si vous avez une quelconque suggestion sur celle-ci. Faites en part par message privé au membre du conseil, merci."
@@ -50,7 +50,7 @@ bot.on("message", function(message)
             {
                 "title": ":arrow_right: __Les règles générales (s’appliquent en vocal et à l’écrit)__",
                 "description": "Sont interdits les comportements suivants (le non-respect de ces interdictions peuvent s’ensuivre d’un ban)",
-                "color": 9109504,
+                "color": "81002"0,
                 "fields": 
                 [
                     {
@@ -96,7 +96,7 @@ bot.on("message", function(message)
             const embed = 
             {
                 "title": ":arrow_right: __Les règles des salons textuels__",
-                "color": 9109504,
+                "color": "810020",
                 "fields": 
                 [
                     {
@@ -138,7 +138,7 @@ bot.on("message", function(message)
             const embed = 
             {
                 "title": ":arrow_right: __Les règles des salons vocaux__",
-                "color": 9109504,
+                "color": "810020",
                 "fields": 
                 [
                     {
@@ -177,7 +177,7 @@ bot.on("message", function(message)
             {
                 "title": ":arrow_right: __Les règles concernant la publicité__",
                 "description": "Sont proscrits les types de publicité suivantes:",
-                "color": 9109504,
+                "color": "810020",
                 "fields": 
                 [
                     {
@@ -201,13 +201,13 @@ bot.on("message", function(message)
             message.channel.send('Pas la permission') 
         }
         break;
-        case "infoclasse":
+        case "infoClasse":
         if (message.author.id === "213322033692409857") 
         {
             const embed = 
             {
                 "description": "Voici quelques explications sur les classe qui compose notre lycée",                
-                "color": 7722751,
+                "color": "004A8F",
                 "fields": 
                 [
                     {
@@ -243,13 +243,13 @@ bot.on("message", function(message)
             message.channel.send('Pas la permission') 
         }
         break;
-        case "infoclub":
+        case "infoClub":
         if (message.author.id === "213322033692409857") 
         {
             const embed = 
             {
                 "description": "Voici quelques explications sur les clubs présent dans notre lycée",
-                "color": 7722751,
+                "color": "006B96",
                 "fields": 
                 [
                     {
@@ -289,13 +289,13 @@ bot.on("message", function(message)
             message.channel.send('Pas la permission') 
         }
         break;
-        case "infoimp":
+        case "infoPower":
         if (message.author.id === "213322033692409857") 
         {
             const embed = 
             {
                 "title": "__**Comité et Conseil des élèves**__",
-                "color": 7722751,
+                "color": "004A8F",
                 "fields": 
                 [
                     {
@@ -323,13 +323,13 @@ bot.on("message", function(message)
             message.channel.send('Pas la permission') 
         }
         break;
-        case "infospec":
+        case "infoAddOn":
         if (message.author.id === "213322033692409857") 
         {
             const embed = 
             {
                 "title": "__**Add-on**__",
-                "color": 7722751,
+                "color": "00AEEF",
                 "footer": 
                 {
                 "text": "PS: De nouveaux rôles spéciaux viendront **certainement** dans le futur"
@@ -381,13 +381,13 @@ bot.on("message", function(message)
             message.channel.send('Pas la permission') 
         }
         break;
-        case "infochan":
+        case "infoChan":
         if (message.author.id === "213322033692409857") 
         {
             const embed = 
             {
                 "description": "Explication des channels, ici",
-                "color": 9109504,
+                "color": "900A22",
                 "image": 
                 {
                 "url": "https://cdn.discordapp.com/attachments/394535366650101770/486830675480281098/Capture.PNG"
@@ -400,13 +400,13 @@ bot.on("message", function(message)
             message.channel.send('Pas la permission') 
         }
         break;
-        case "infoxp":
+        case "infoXp":
         if (message.author.id === "213322033692409857") 
         {
             const embed = 
             {
                 "title": ":arrow_right: __**Comment XP avec Hatchi ?**__",
-                "color": 7722751,
+                "color": "95C22B",
                 "fields": 
                 [
                     {
@@ -430,13 +430,13 @@ bot.on("message", function(message)
             message.channel.send('Pas la permission') 
         }
         break;
-        case "infohier":
+        case "infoHier":
         if (message.author.id === "213322033692409857") 
         {
             const embed = 
             {
                 "title": ":arrow_right: __**Hiérarchie en place au Lycée**__",
-                "color": 9109504,
+                "color": "900A22",
                 "footer": 
                 {
                 "text": "PS: La hiéarché n'inclue pas les add-on car ceux-ci n'apportent pas de permission en plus (la majorité)"
@@ -489,13 +489,13 @@ bot.on("message", function(message)
     {
         message.channel.send('Rentrez une question') 
     } 
-    else if(message.author.id === "213322033692409857") 
+    else if(message.author.id === "213322033692409857" || message.author.id === "316672290479931392" || message.author.id === "369914503892041730" || message.author.id === "269530258267439115" || message.author.id === "316673507922804736") 
     {
         const embed = new Discord.RichEmbed()
         .setTitle("__**Sondage**__")
         .addField("Question: ", tte)
         .setFooter('Réagissez par ✅ ou ❌!')
-        .setColor('#FF800D')
+        .setColor('#507B00')
             
         message.guild.channels.find("id", "480075582340595744").sendEmbed(embed)
         .then(function (message){ 
@@ -507,10 +507,9 @@ bot.on("message", function(message)
     {
         message.channel.send('Pas la permission') 
     }
-    break;
-    
+    break;  
     case "say":
-    if (message.author.id === "213322033692409857") {
+    if (message.author.id === "213322033692409857" || message.author.id === "316672290479931392" || message.author.id === "369914503892041730" || message.author.id === "269530258267439115" || message.author.id === "316673507922804736") {
         let textsay = message.content.split(" ").slice(1);
         let btmsg = textsay.join(" ");
         message.delete().catch();
@@ -545,7 +544,34 @@ bot.on("message", function(message)
         message.channel.sendMessage("Temps de latence avec le serveur: `" + `${(Date.now () - message.createdTimestamp) / 100}` + "ms`");
     break;
     case "promot":
-        message.guild.channels.find("id", "462923821801013249").sendMessage("Comment passer en classe S ? Envoyer un mp à un membre du staff suivi d'une présentation/candidature, s'il vous plait");
+        message.guild.channels.find("id", "462923821801013249").sendMessage("Comment passer en classe S ? Envoyer un mp à un membre du staff suivi d'une présentation/candidature.");
+    break;
+    case "help":
+        const embed = new Discord.RichEmbed()
+        .setDescription ("**Commandes**")
+        .addField("__Prefix__", "&")
+        .addField("__Invitation__", "invit")
+        .addField("_Besoin d'aide__", "helpop")
+        .addField("_Ping__", "ping")
+        .addField("__Information sur le serveur__ ", "serv")
+        .setColor("#95C22B")
+    message.channel.sendEmbed(embed)
+    break;
+    case "shelp":
+    if(message.author.id === "213322033692409857" || message.author.id === "316672290479931392" || message.author.id === "369914503892041730" || message.author.id === "269530258267439115" || message.author.id === "316673507922804736")
+    {
+        const embed = new Discord.RichEmbed()
+        .setDescription ("**Commandes Staff**")
+        .addField("__Prefix__", "&")
+        .addField("_Sondage__", "poll (question)")
+        .addField("_Nesturako__", "say (message)")
+        .addField("__Autres commandes__ ", "help")
+        .setColor("#507B00")
+    }
+    else 
+    {
+        message.channel.send('Pas la permission') 
+    }
     break;
     case "serv":
         const embed = new Discord.RichEmbed()
@@ -554,7 +580,7 @@ bot.on("message", function(message)
         .addField("Créer le ", "13 Décembre 2017")
         .addField("Tu as rejoins le ", message.member.joinedAt)
         .addField("__Utilisateur sur le discord:__ ", message.guild.memberCount)
-        .setColor("#D9C400")
+        .setColor("#95C22B")
         message.channel.sendEmbed(embed)
     }
 })
