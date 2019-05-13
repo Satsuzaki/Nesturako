@@ -21,7 +21,8 @@ bot.on("message", function(message)
     if (message.author.equals(bot.user)) return;
     if (!message.content.startsWith(prefix)) return;
     var args = message.content.substring(prefix.length).split(" ");
-    switch (args[0].toLowerCase()) {
+    switch (args[0].toLowerCase()) 
+    {
         case "regle":
         if (message.author.id === "213322033692409857") 
         {
@@ -470,17 +471,17 @@ bot.on("message", function(message)
         {
             message.channel.send('Pas la permission') 
         }
-    break;
-    case "infoPromot":
+        break;
+        case "infoPromot":
         if (message.author.id === "213322033692409857")
         {
             const embed = 
             {
-                "title": "__**Passage en 📓 Classe-S**__",
+                "title": "__**Passage en Classe-S**__",
                 "color": 9109504,
                 "footer": 
                 {
-                "text": "Conseil: Faites d'abord vos preuves/investissez-vous au sein de la communauté 😉"
+                "text": "Conseil: Faites d'abord vos preuves/investissez-vous au sein de la communauté"
                 },
                 "fields": 
                 [
