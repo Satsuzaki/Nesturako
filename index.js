@@ -30,7 +30,7 @@ bot.on("message", function(message)
             {
                     "title": ":exclamation:__**Règlement**__:exclamation:",
                     "description": "La communauté possède un règlement qui se doit d’être respecté, afin de maintenir une bonne ambiance au sein du serveur. Toute infraction au règlement résultera à une sanction adaptée à la gravité de vos actes. Le staff se réserve le droit s’il en juge nécessaire, de sanctionner tout comportement incorrect, même si celui-ci ne rentre pas dans le règlement.",
-                    "color": c83349,
+                    "color": 670000,
                     "footer": 
                     {
                     "text": "PS: Les règles sont sujettes à adaptations et changements dans le futur, si vous avez une quelconque suggestion sur celle-ci. Faites en part par message privé au membre du conseil, merci."
@@ -50,7 +50,7 @@ bot.on("message", function(message)
             {
                 "title": ":arrow_right: __Les règles générales (s’appliquent en vocal et à l’écrit)__",
                 "description": "Sont interdits les comportements suivants (le non-respect de ces interdictions peuvent s’ensuivre d’un ban)",
-                "color": c83349,
+                "color": 670000,
                 "fields": 
                 [
                     {
@@ -96,7 +96,7 @@ bot.on("message", function(message)
             const embed = 
             {
                 "title": ":arrow_right: __Les règles des salons textuels__",
-                "color": c83349,
+                "color": 670000,
                 "fields": 
                 [
                     {
@@ -138,7 +138,7 @@ bot.on("message", function(message)
             const embed = 
             {
                 "title": ":arrow_right: __Les règles des salons vocaux__",
-                "color": c83349,
+                "color": 670000,
                 "fields": 
                 [
                     {
@@ -177,7 +177,7 @@ bot.on("message", function(message)
             {
                 "title": ":arrow_right: __Les règles concernant la publicité__",
                 "description": "Sont proscrits les types de publicité suivantes:",
-                "color": c83349,
+                "color": 670000,
                 "fields": 
                 [
                     {
@@ -207,7 +207,7 @@ bot.on("message", function(message)
             const embed = 
             {
                 "description": "Voici quelques explications sur les classe qui compose notre lycée",                
-                "color": 667292,
+                "color": 004444,
                 "fields": 
                 [
                     {
@@ -249,7 +249,7 @@ bot.on("message", function(message)
             const embed = 
             {
                 "description": "Voici quelques explications sur les clubs présent dans notre lycée",
-                "color": "8d9db6",
+                "color": 005555,
                 "fields": 
                 [
                     {
@@ -295,7 +295,7 @@ bot.on("message", function(message)
             const embed = 
             {
                 "title": "__**Comité et Conseil des élèves**__",
-                "color": 667292,
+                "color": 004444,
                 "fields": 
                 [
                     {
@@ -329,7 +329,7 @@ bot.on("message", function(message)
             const embed = 
             {
                 "title": "__**Add-on**__",
-                "color": bccad6,
+                "color": 006666,
                 "footer": 
                 {
                 "text": "PS: De nouveaux rôles spéciaux viendront **certainement** dans le futur"
@@ -387,7 +387,7 @@ bot.on("message", function(message)
             const embed = 
             {
                 "description": "Explication des channels, ici",
-                "color": e06377,
+                "color": 80000,
                 "image": 
                 {
                 "url": "https://cdn.discordapp.com/attachments/394535366650101770/486830675480281098/Capture.PNG"
@@ -406,7 +406,7 @@ bot.on("message", function(message)
             const embed = 
             {
                 "title": ":arrow_right: __**Comment XP avec Hatchi ?**__",
-                "color": "86af49",
+                "color": "000055",
                 "fields": 
                 [
                     {
@@ -436,7 +436,7 @@ bot.on("message", function(message)
             const embed = 
             {
                 "title": ":arrow_right: __**Hiérarchie en place au Lycée**__",
-                "color": e06377,
+                "color": 80000,
                 "footer": 
                 {
                 "text": "PS: La hiéarché n'inclue pas les add-on car ceux-ci n'apportent pas de permission en plus (la majorité)"
@@ -496,7 +496,7 @@ bot.on("message", function(message)
         .setTitle("__**Sondage**__")
         .addField("Question: ", tte)
         .setFooter('Réagissez par ✅ ou ❌!')
-        .setColor('#405d27')
+        .setColor('#000044')
             
         message.guild.channels.find("id", "480075582340595744").sendEmbed(embed)
         .then(function (message){ 
@@ -533,7 +533,7 @@ bot.on("message", function(message)
         .addField('Nom du serveur:', 'Lycée **Alafia**')
         .addField('Signfication:', '"Paix" en Yoruba')
         .addField('Pourquoi ?', 'Soon 😉')
-        .setColor("#D9C400")
+        .setColor("#000055")
         message.channel.sendEmbed(embed)
     break;
     */
@@ -557,7 +557,7 @@ bot.on("message", function(message)
         .addField("_Besoin d'aide__", "helpop")
         .addField("_Ping__", "ping")
         .addField("__Information sur le serveur__ ", "serv")
-        .setColor("#86af49")
+        .setColor("#000055")
         message.channel.sendEmbed(embed)
     break;
     case "shelp":
@@ -569,7 +569,7 @@ bot.on("message", function(message)
         .addField("_Sondage__", "poll (question)")
         .addField("_Nesturako__", "say (message)")
         .addField("__Autres commandes__ ", "help")
-        .setColor("#405d27")
+        .setColor("#000044")
         message.channel.sendEmbed(embed)
     }
     else 
@@ -585,7 +585,7 @@ bot.on("message", function(message)
         .addField("Créer le ", "13 Décembre 2017")
         .addField("Tu as rejoins le ", message.member.joinedAt)
         .addField("__Utilisateur sur le discord:__ ", message.guild.memberCount)
-        .setColor("#86af49")
+        .setColor("#000055")
         message.channel.sendEmbed(embed)
     }
 })
