@@ -264,8 +264,8 @@ bot.on("message", function(message)
                     "value": "• Pour tous les mordus du 7ème Art"
                     },
                     {
-                    "name": "__🌄Naturologue__",
-                    "value": "• Si vous attachez une importance à la nature (zoologie, herbologie, ...)"
+                    "name": "__💻 Geek__",
+                    "value": "• Si vous êtes intéressé par les nouvelles technologie"
                     },
                     {
                     "name": "__🎹 Musicien__",
@@ -329,7 +329,8 @@ bot.on("message", function(message)
             {
                 "title": "__**Add-on**__",
                 "color": 7722751,
-                "footer": {
+                "footer": 
+                {
                 "text": "PS: De nouveaux rôles spéciaux viendront **certainement** dans le futur"
                 },
                 "fields": 
@@ -352,7 +353,7 @@ bot.on("message", function(message)
                     },
                     {
                     "name": "__🔞 Nsfw__",
-                    "value": "• ... ( <#462923891724255243> ) ?"
+                    "value": "• ... ( <#462923891724255243> )"
                     },
                     {
                     "name": "__📐 Etudiant__",
@@ -360,7 +361,7 @@ bot.on("message", function(message)
                     },
                     {
                     "name": "__💵 Capitaliste__",
-                    "value": "• Pognon, pognon, pognon ( <#462923863995580416> ) !"
+                    "value": "• Pognon, pognon, pognon ( <#462923863995580416> )"
                     },
                     {
                     "name": "__⭐ Communiste__",
@@ -475,7 +476,7 @@ bot.on("message", function(message)
         {
             const embed = 
             {
-                "title": "__**Passage en Classe S**__",
+                "title": "__**Passage en 📓 Classe-S**__",
                 "color": 9109504,
                 "footer": 
                 {
