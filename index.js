@@ -6,7 +6,7 @@ const prefix = '&';
 /* Lancement du Bot */
 bot.on('ready', () => {
     console.log('Bot activé')
-    bot.user.setGame("en cours d'informatique quantique")
+    bot.user.setGame("en maintenance")
 });
 
 /* Message de Bienvenue */
@@ -429,6 +429,7 @@ bot.on("message", function(message)
             message.channel.send('Pas la permission') 
         }
         break;
+        /*
         case "infohier":
         if (message.author.id === "213322033692409857") 
         {
@@ -497,7 +498,7 @@ bot.on("message", function(message)
             message.channel.send('Pas la permission') 
         }
     break;
-    
+    */
     }
 })
 /* Commandes Utiles */
