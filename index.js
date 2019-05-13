@@ -548,6 +548,7 @@ bot.on("message", function(message)
     case "promot":
         message.guild.channels.find("id", "462923821801013249").sendMessage("Comment passer en classe S ? Envoyer un mp à un membre du staff suivi d'une présentation/candidature.");
     break;
+    /*
     case "help":
         const embed = new Discord.RichEmbed()
         .setDescription ("**Commandes**")
@@ -576,6 +577,7 @@ bot.on("message", function(message)
         message.channel.send('Pas la permission') 
     }
     break;
+    */
     case "serv":
         const embed = new Discord.RichEmbed()
         .setDescription ("**Information du Discord**")
