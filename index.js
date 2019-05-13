@@ -471,32 +471,6 @@ bot.on("message", function(message)
         {
             message.channel.send('Pas la permission') 
         }
-        break;
-        case "infoPromot":
-        if (message.author.id === "213322033692409857")
-        {
-            const embed = 
-            {
-                "title": "__**Passage en Classe-S**__",
-                "color": 9109504,
-                "footer": 
-                {
-                "text": "Conseil: Faites d'abord vos preuves/investissez-vous au sein de la communauté"
-                },
-                "fields": 
-                [
-                    {
-                    "name": "Comment passer en classe S ?",
-                    "value": "• Envoyer un mp à un membre du staff suivi d'une présentation/candidature, s'il vous plait"
-                    }
-                ]
-            };
-            message.guild.channels.find("id", "462923821801013249").sendEmbed(embed)
-        } 
-        else 
-        {
-            message.channel.send('Pas la permission') 
-        }
     }
 })
 /* Commandes Utiles */
@@ -569,6 +543,9 @@ bot.on("message", function(message)
     break;
     case "ping":
         message.channel.sendMessage("Temps de latence avec le serveur: `" + `${(Date.now () - message.createdTimestamp) / 100}` + "ms`");
+    break;
+    case "promot":
+        message.guild.channels.find("id", "462923821801013249").sendMessage("Comment passer en classe S ? Envoyer un mp à un membre du staff suivi d'une présentation/candidature, s'il vous plait");
     break;
     case "serv":
         const embed = new Discord.RichEmbed()
