@@ -514,7 +514,8 @@ bot.on("message", function(message)
     {
         message.channel.send('Rentrez une question') 
     } 
-    else if(message.author.id === "213322033692409857" || message.author.id === "369914503892041730" || message.author.id === "316672290479931392" || message.author.id === "269530258267439115") {
+    else if(message.author.id === "213322033692409857") 
+    {
         const embed = new Discord.RichEmbed()
         .setTitle("__**Sondage**__")
         .addField("Question: ", tte)
@@ -533,7 +534,7 @@ bot.on("message", function(message)
     }
     break;
     case "say":
-    if (message.author.id === "213322033692409857" || message.author.id === "369914503892041730" || message.author.id === "316672290479931392" || message.author.id === "269530258267439115") {
+    if (message.author.id === "213322033692409857") {
         let textsay = message.content.split(" ").slice(1);
         let btmsg = textsay.join(" ");
         message.delete().catch();
