@@ -557,7 +557,7 @@ bot.on("message", function(message)
         .addField("_Ping__", "ping")
         .addField("__Information sur le serveur__ ", "serv")
         .setColor("#95C22B")
-    message.channel.sendEmbed(embed)
+        message.channel.sendEmbed(embed)
     break;
     case "shelp":
     if(message.author.id === "213322033692409857" || message.author.id === "316672290479931392" || message.author.id === "369914503892041730" || message.author.id === "269530258267439115" || message.author.id === "316673507922804736")
@@ -569,6 +569,7 @@ bot.on("message", function(message)
         .addField("_Nesturako__", "say (message)")
         .addField("__Autres commandes__ ", "help")
         .setColor("#507B00")
+        message.channel.sendEmbed(embed)
     }
     else 
     {
