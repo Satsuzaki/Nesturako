@@ -30,7 +30,7 @@ bot.on("message", function(message)
             {
                     "title": ":exclamation:__**Règlement**__:exclamation:",
                     "description": "La communauté possède un règlement qui se doit d’être respecté, afin de maintenir une bonne ambiance au sein du serveur. Toute infraction au règlement résultera à une sanction adaptée à la gravité de vos actes. Le staff se réserve le droit s’il en juge nécessaire, de sanctionner tout comportement incorrect, même si celui-ci ne rentre pas dans le règlement.",
-                    "color": "c83349",
+                    "color": c83349,
                     "footer": 
                     {
                     "text": "PS: Les règles sont sujettes à adaptations et changements dans le futur, si vous avez une quelconque suggestion sur celle-ci. Faites en part par message privé au membre du conseil, merci."
@@ -50,7 +50,7 @@ bot.on("message", function(message)
             {
                 "title": ":arrow_right: __Les règles générales (s’appliquent en vocal et à l’écrit)__",
                 "description": "Sont interdits les comportements suivants (le non-respect de ces interdictions peuvent s’ensuivre d’un ban)",
-                "color": "c83349",
+                "color": c83349,
                 "fields": 
                 [
                     {
@@ -96,7 +96,7 @@ bot.on("message", function(message)
             const embed = 
             {
                 "title": ":arrow_right: __Les règles des salons textuels__",
-                "color": "c83349",
+                "color": c83349,
                 "fields": 
                 [
                     {
@@ -138,7 +138,7 @@ bot.on("message", function(message)
             const embed = 
             {
                 "title": ":arrow_right: __Les règles des salons vocaux__",
-                "color": "c83349",
+                "color": c83349,
                 "fields": 
                 [
                     {
@@ -177,7 +177,7 @@ bot.on("message", function(message)
             {
                 "title": ":arrow_right: __Les règles concernant la publicité__",
                 "description": "Sont proscrits les types de publicité suivantes:",
-                "color": "c83349",
+                "color": c83349,
                 "fields": 
                 [
                     {
@@ -207,7 +207,7 @@ bot.on("message", function(message)
             const embed = 
             {
                 "description": "Voici quelques explications sur les classe qui compose notre lycée",                
-                "color": "667292",
+                "color": 667292,
                 "fields": 
                 [
                     {
@@ -295,7 +295,7 @@ bot.on("message", function(message)
             const embed = 
             {
                 "title": "__**Comité et Conseil des élèves**__",
-                "color": "667292",
+                "color": 667292,
                 "fields": 
                 [
                     {
@@ -329,7 +329,7 @@ bot.on("message", function(message)
             const embed = 
             {
                 "title": "__**Add-on**__",
-                "color": "bccad6",
+                "color": bccad6,
                 "footer": 
                 {
                 "text": "PS: De nouveaux rôles spéciaux viendront **certainement** dans le futur"
@@ -387,7 +387,7 @@ bot.on("message", function(message)
             const embed = 
             {
                 "description": "Explication des channels, ici",
-                "color": "e06377",
+                "color": e06377,
                 "image": 
                 {
                 "url": "https://cdn.discordapp.com/attachments/394535366650101770/486830675480281098/Capture.PNG"
@@ -436,7 +436,7 @@ bot.on("message", function(message)
             const embed = 
             {
                 "title": ":arrow_right: __**Hiérarchie en place au Lycée**__",
-                "color": "e06377",
+                "color": e06377,
                 "footer": 
                 {
                 "text": "PS: La hiéarché n'inclue pas les add-on car ceux-ci n'apportent pas de permission en plus (la majorité)"
