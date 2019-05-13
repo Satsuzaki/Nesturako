@@ -50,7 +50,7 @@ bot.on("message", function(message)
             {
                 "title": ":arrow_right: __Les règles générales (s’appliquent en vocal et à l’écrit)__",
                 "description": "Sont interdits les comportements suivants (le non-respect de ces interdictions peuvent s’ensuivre d’un ban)",
-                "color": "81002"0,
+                "color": "810020",
                 "fields": 
                 [
                     {
@@ -482,6 +482,7 @@ bot.on("message", function(message)
     var args = message.content.substring(prefix.length).split(" ");
     switch (args[0].toLowerCase()) 
     {
+    
     case "poll":
     let args = message.content.split(" ").slice(1);
     let tte = args.join(" ")
@@ -540,6 +541,7 @@ bot.on("message", function(message)
         message.delete().catch();
         message.guild.channels.find("id", "462928491831230484").sendMessage(/*<@369914503892041730> , <@316672290479931392> ,*/"<@&462952083746717697> et <@&462952216064425984>: " + message.member.toString() + " à besoin d'aide !");
     break;
+    
     case "ping":
         message.channel.sendMessage("Temps de latence avec le serveur: `" + `${(Date.now () - message.createdTimestamp) / 100}` + "ms`");
     break;
@@ -585,5 +587,5 @@ bot.on("message", function(message)
     }
 })
 
- /* Token */
+/* Token */
 bot.login(process.env.TOKEN)
