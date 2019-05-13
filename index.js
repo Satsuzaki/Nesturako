@@ -6,7 +6,7 @@ const prefix = '&';
 /* Lancement du Bot */
 bot.on('ready', () => {
     console.log('Bot activé')
-    bot.user.setGame("en maintenance")
+    bot.user.setGame("en cours d'informatique quantique")
 });
 
 /* Message de Bienvenue */
@@ -552,6 +552,7 @@ bot.on("message", function(message)
         message.guild.channels.find("id", "462949032226979850").sendMessage("Salutation chers élèves, je me nomme Nesturako Seijuro. Je suis professeur de programmation au lycée **Alafia**. Je suis encore à mes débuts dans ma carrière d'enseignant donc si vous avez des suggetions à faire. Faites les par mp à <@213322033692409857> , s'il vous plait ^^'");
     }
     break;
+    /*
     case "story":
         const embed = new Discord.RichEmbed()
         .addField('Nom du serveur:', 'Lycée **Alafia**')
