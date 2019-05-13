@@ -6,7 +6,7 @@ const prefix = '&';
 /* Lancement du Bot */
 bot.on('ready', () => {
     console.log('Bot activé')
-    bot.user.setGame("en cours d'informatique quantique")
+    bot.user.setGame("en cmaintenance")
 });
 
 /* Message de Bienvenue */
@@ -507,7 +507,7 @@ bot.on("message", function(message)
     var args = message.content.substring(prefix.length).split(" ");
     switch (args[0].toLowerCase()) 
     {
-    /* 
+     
     case "poll":
     let args = message.content.split(" ").slice(1);
     let tte = args.join(" ")
@@ -534,7 +534,7 @@ bot.on("message", function(message)
         message.channel.send('Pas la permission') 
     }
     break;
-    */
+    
     case "say":
     if (message.author.id === "213322033692409857") {
         let textsay = message.content.split(" ").slice(1);
