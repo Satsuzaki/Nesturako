@@ -201,7 +201,7 @@ bot.on("message", function(message)
             message.channel.send('Pas la permission') 
         }
         break;
-        case "infoRole":
+        case "descrole":
         if (message.author.id === "213322033692409857") 
         {
             const embed = 
@@ -271,7 +271,7 @@ bot.on("message", function(message)
             message.channel.send('Pas la permission') 
         }
         break;
-        case "infoAddOn":
+        case "addon":
         if (message.author.id === "213322033692409857") 
         {
             const embed = 
@@ -321,7 +321,7 @@ bot.on("message", function(message)
             message.channel.send('Pas la permission') 
         }
         break;
-        case "infoHier":
+        case "hierarchie":
         if (message.author.id === "213322033692409857") 
         {
             const embed = 
