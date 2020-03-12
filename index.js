@@ -218,7 +218,7 @@ bot.on("message", function(message)
                     "name": "__💼 Conseiller__",
                     "value": "• Le Conseiller a pour ambition de répondre à vos questions, de vous aider lors de votre séjour dans notre merveilleuse Cité. Cependant, c'est principalement vers lui que les autres membres du Gourvernement viennent chercher des conseils pour le différents projets."
                     },
-                    /*{
+                    {
                     "name": "__💰 Boursier__",
                     "value": "• Le Boursier est comme son nom l'indique celui qui gère l'économie de notre ville et c'est donc lui qui organise la plupart de nos événements pour continuer à améliorer la prospérité de celle-ci."
                     },
@@ -257,7 +257,7 @@ bot.on("message", function(message)
                     {
                     "name": "__🔖  Adhérents__",
                     "value": "• Les Adhérents sont les déscendants membres d'une ancienne organisation qui se retrouve de temps en temps autour d'une boisson chaude pour discuter."
-                    },*/
+                    },
                     {
                     "name": "__👮‍ Prisonnier__",
                     "value": "• Les Prisionners sont nos membres qui ont commis le plus d'infractions au sein de la communauté et qui se doivent d'être puni."
@@ -284,7 +284,7 @@ bot.on("message", function(message)
                     "name": "__🍟 Belge__",
                     "value": "• Une frite, une fois ?"
                     },
-                    /*{
+                    {
                     "name": "__🥖 Français__",
                     "value": "• Pour tous les Bleu, blanc, rouge"
                     },
@@ -307,9 +307,9 @@ bot.on("message", function(message)
                     {
                     "name": "__⭐ Communiste__",
                     "value": "• Crie STALINE !"
-                    },*/
+                    },
                     {
-                    "name": "__👮🏻 Fasciste__",
+                    "name": "__⚔️ Fasciste__",
                     "value": "• Hail Hydra !"
                     }
                 ]
@@ -334,14 +334,14 @@ bot.on("message", function(message)
                     "name": ":white_small_square:__Gourvenement :__",
                     "value": "• Chef de la cité, Conseiller, Boursier, Informateur et Général"
                     },
-                    /*{
+                    {
                     "name": ":white_small_square:__Haut Membre :__",
                     "value": "• Gérant des magasins et Elitiste"
                     },
                     {
                     "name": ":white_small_square:__Membre :__",
                     "value": "• Comte, Bourgeois et Roturier"
-                    },*/
+                    },
                     {
                     "name": ":white_small_square:__Sous-peuple :__",
                     "value": "• Mute/En prison"
