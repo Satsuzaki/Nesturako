@@ -30,7 +30,7 @@ bot.on("message", function(message)
             {
                     "title": ":exclamation:__**Règlement**__:exclamation:",
                     "description": "La communauté possède un règlement qui se doit d’être respecté, afin de maintenir une bonne ambiance au sein du serveur. Toute infraction au règlement résultera à une sanction adaptée à la gravité de vos actes. Le staff se réserve le droit s’il en juge nécessaire, de sanctionner tout comportement incorrect, même si celui-ci ne rentre pas dans le règlement.",
-                    "color": 0x7f0000, //Rouge foncé
+                    "color": 0x7f0000,
                     "footer": 
                     {
                     "text": "PS: Les règles sont sujettes à adaptations et changements dans le futur, si vous avez une quelconque suggestion sur celle-ci. Faites en part par message privé au membre du conseil, merci."
@@ -50,7 +50,7 @@ bot.on("message", function(message)
             {
                 "title": ":arrow_right: __Les règles générales (s’appliquent en vocal et à l’écrit)__",
                 "description": "Sont interdits les comportements suivants (le non-respect de ces interdictions peuvent s’ensuivre d’un ban)",
-                "color": 0x7f0000, //Rouge foncé
+                "color": 0x7f0000,
                 "fields": 
                 [
                     {
@@ -96,7 +96,7 @@ bot.on("message", function(message)
             const embed = 
             {
                 "title": ":arrow_right: __Les règles des salons textuels__",
-                "color": 0x7f0000, //Rouge foncé
+                "color": 0x7f0000,
                 "fields": 
                 [
                     {
@@ -138,7 +138,7 @@ bot.on("message", function(message)
             const embed = 
             {
                 "title": ":arrow_right: __Les règles des salons vocaux__",
-                "color": 0x7f0000, //Rouge foncé
+                "color": 0x7f0000,
                 "fields": 
                 [
                     {
@@ -177,7 +177,7 @@ bot.on("message", function(message)
             {
                 "title": ":arrow_right: __Les règles concernant la publicité__",
                 "description": "Sont proscrits les types de publicité suivantes:",
-                "color": 0x7f0000, //Rouge foncé
+                "color": 0x7f0000,
                 "fields": 
                 [
                     {
@@ -201,13 +201,13 @@ bot.on("message", function(message)
             message.channel.send('Pas la permission') 
         }
         break;
-        /*case "infoRole":
+        case "infoRole":
         if (message.author.id === "213322033692409857") 
         {
             const embed = 
             {
                 "title": "__**Info des rôles sur le serveur**__",
-                "color": 0xff7f00, //Ocre
+                "color": 0xff7f00,
                 "fields": 
                 [
                     {
@@ -277,7 +277,7 @@ bot.on("message", function(message)
             const embed = 
             {
                 "title": "__**Add-on**__",
-                "color": 0xe69500, //Ocre
+                "color": 0xff7f00,
                 "fields": 
                 [
                     {
@@ -320,14 +320,14 @@ bot.on("message", function(message)
         {
             message.channel.send('Pas la permission') 
         }
-        break;*/
+        break;
         case "infoHier":
         if (message.author.id === "213322033692409857") 
         {
             const embed = 
             {
                 "title": ":arrow_right: __**Hiérarchie en place dans la Cité**__",
-                "color": 0xe69500, //Ocre
+                "color": 0xff7f00,
                 "fields": 
                 [
                     {
