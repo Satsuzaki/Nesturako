@@ -36,7 +36,7 @@ bot.on("message", function(message)
                     "text": "PS: Les règles sont sujettes à adaptations et changements dans le futur, si vous avez une quelconque suggestion sur celle-ci. Faites en part par message privé au membre du conseil, merci."
                     }
                 };
-                message.guild.channels.find("id", "462927679533088768").sendEmbed(embed)
+                message.guild.channels.find("id", "631395951671771149").sendEmbed(embed)
             } 
             else 
             {
@@ -83,7 +83,7 @@ bot.on("message", function(message)
                     },
                 ]
             };
-            message.guild.channels.find("id", "462927679533088768").sendEmbed(embed)
+            message.guild.channels.find("id", "631395951671771149").sendEmbed(embed)
         } 
         else 
         {
@@ -125,7 +125,7 @@ bot.on("message", function(message)
                     }
                 ]
             };
-            message.guild.channels.find("id", "462927679533088768").sendEmbed(embed)
+            message.guild.channels.find("id", "631395951671771149").sendEmbed(embed)
         } 
         else 
         {
@@ -163,7 +163,7 @@ bot.on("message", function(message)
                     }
                 ]
             };
-            message.guild.channels.find("id", "462927679533088768").sendEmbed(embed)
+            message.guild.channels.find("id", "631395951671771149").sendEmbed(embed)
         } 
         else 
         {
@@ -194,7 +194,7 @@ bot.on("message", function(message)
                     }
                 ]
             };
-            message.guild.channels.find("id", "462927679533088768").sendEmbed(embed)
+            message.guild.channels.find("id", "631395951671771149").sendEmbed(embed)
         } 
         else 
         {
@@ -264,7 +264,7 @@ bot.on("message", function(message)
                     },
                 ]
             };
-            message.guild.channels.find("id", "462927679533088768").sendEmbed(embed)
+            message.guild.channels.find("id", "631395951671771149").sendEmbed(embed)
         } 
         else 
         {
@@ -314,7 +314,7 @@ bot.on("message", function(message)
                     }
                 ]
             };
-            message.guild.channels.find("id", "462927679533088768").sendEmbed(embed)
+            message.guild.channels.find("id", "631395951671771149").sendEmbed(embed)
         } 
         else 
         {
@@ -349,7 +349,7 @@ bot.on("message", function(message)
                     }
                 ]
             };
-            message.guild.channels.find("id", "462927679533088768").sendEmbed(embed)
+            message.guild.channels.find("id", "631395951671771149").sendEmbed(embed)
         } 
         else 
         {
