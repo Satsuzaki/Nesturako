@@ -261,7 +261,7 @@ bot.on("message", function(message)
                     {
                     "name": "__👮‍ Prisonnier__",
                     "value": "• Les Prisionners sont nos membres qui ont commis le plus d'infractions au sein de la communauté et qui se doivent d'être puni."
-                    },
+                    }
                 ]
             };
             message.guild.channels.find("id", "631395951671771149").sendEmbed(embed)
