@@ -207,7 +207,7 @@ bot.on("message", function(message)
             const embed = 
             {
                 "title": "__**Info des rôles sur le serveur**__",
-                "color": 0xe69500, //Ocre
+                "color": 0xff7f00, //Ocre
                 "fields": 
                 [
                     {
