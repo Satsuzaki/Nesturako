@@ -12,7 +12,7 @@ bot.on('ready', () => {
 /* Message de Bienvenue */
 bot.on('guildMemberAdd', member => {
     console.log('User ' + member.user.username + ' a rejoint le serveur!')
-    member.guild.channels.get('462232742126419969').send('Bonjour ' + member + ', bienvenue au lycée **Alafia** :tada::hugging: !')
+    member.guild.channels.get('462232742126419969').send("Bonjour " + member + " et bienvenue dans la cité Etat d'**Alafia** :tada::hugging: !")
 });
 
 /* Commandes Embed */
@@ -30,7 +30,7 @@ bot.on("message", function(message)
             {
                     "title": ":exclamation:__**Règlement**__:exclamation:",
                     "description": "La communauté possède un règlement qui se doit d’être respecté, afin de maintenir une bonne ambiance au sein du serveur. Toute infraction au règlement résultera à une sanction adaptée à la gravité de vos actes. Le staff se réserve le droit s’il en juge nécessaire, de sanctionner tout comportement incorrect, même si celui-ci ne rentre pas dans le règlement.",
-                    "color": 670000,
+                    "color": 0x7f0000, //Rouge foncé
                     "footer": 
                     {
                     "text": "PS: Les règles sont sujettes à adaptations et changements dans le futur, si vous avez une quelconque suggestion sur celle-ci. Faites en part par message privé au membre du conseil, merci."
@@ -50,7 +50,7 @@ bot.on("message", function(message)
             {
                 "title": ":arrow_right: __Les règles générales (s’appliquent en vocal et à l’écrit)__",
                 "description": "Sont interdits les comportements suivants (le non-respect de ces interdictions peuvent s’ensuivre d’un ban)",
-                "color": 670000,
+                "color": 0x7f0000, //Rouge foncé
                 "fields": 
                 [
                     {
@@ -96,7 +96,7 @@ bot.on("message", function(message)
             const embed = 
             {
                 "title": ":arrow_right: __Les règles des salons textuels__",
-                "color": 670000,
+                "color": 0x7f0000, //Rouge foncé
                 "fields": 
                 [
                     {
@@ -138,7 +138,7 @@ bot.on("message", function(message)
             const embed = 
             {
                 "title": ":arrow_right: __Les règles des salons vocaux__",
-                "color": 670000,
+                "color": 0x7f0000, //Rouge foncé
                 "fields": 
                 [
                     {
@@ -177,7 +177,7 @@ bot.on("message", function(message)
             {
                 "title": ":arrow_right: __Les règles concernant la publicité__",
                 "description": "Sont proscrits les types de publicité suivantes:",
-                "color": 670000,
+                "color": 0x7f0000, //Rouge foncé
                 "fields": 
                 [
                     {
@@ -201,119 +201,67 @@ bot.on("message", function(message)
             message.channel.send('Pas la permission') 
         }
         break;
-        case "infoClasse":
+        case "infoRole":
         if (message.author.id === "213322033692409857") 
         {
             const embed = 
             {
-                "description": "Voici quelques explications sur les classe qui compose notre lycée",                
-                "color": 004444,
+                "title": "__**Info des rôles sur le serveur**__",
+                "color": 0xe69500, //Ocre
                 "fields": 
                 [
                     {
-                    "name": "__📘 Classe-E__",
-                    "value": "• Classe du début (peu de permission, **1 club**)"
+                    "name": "__💎 Chef de la Cité__",
+                    "value": "• Le Chef de la Cité est le rôle, le plus important de notre communauté. Il a le droit de tout faire sur le serveur, rentrant dans le cadre des règles qui dirige notre Bourgade."
                     },
                     {
-                    "name": "__📙 Classe-D__",
-                    "value": "• Lvl 7 (accès à l'extérieur du lycée + Add-on n°1, **2 club**)"
+                    "name": "__💼 Conseiller__",
+                    "value": "• Le Conseiller a pour ambition de répondre à vos questions, de vous aider lors de votre séjour dans notre merveilleuse Cité. Cependant, c'est principalement vers lui que les autres membres du Gourvernement viennent chercher des conseils pour le différents projets."
                     },
                     {
-                    "name": "__📗 Classe-C__",
-                    "value": "• Lvl 14 (possibilité d'accès au <#468462827838111772> -> Add-on n°2, **2 club**)"
+                    "name": "__💰 Boursier__",
+                    "value": "• Le Boursier est comme son nom l'indique celui qui gère l'économie de notre ville et c'est donc lui qui organise la plupart de nos événements pour continuer à améliorer la prospérité de celle-ci."
                     },
                     {
-                    "name": "__📕 Classe-B__",
-                    "value": "• Lvl 21 (Add-on n°3, **3 club**)"
+                    "name": "__🛡️ Général__",
+                    "value": "• Le Général est le plus grand symbole d'allégence aux règles qui régissent notre Cité, c'est de son devoir de les faire respecter et c'est aussi à lui d'encadrer les différents événements."
                     },
                     {
-                    "name": "__📒 Classe-A__",
-                    "value": "• Lvl 28 (possibilité d'accès à toutes les classes en dessous, **3 club**)"
+                    "name": "__📣 Informateur__",
+                    "value": "• L'Informateur vous tiendra au courant de toutes les petites nouveautés en tout genre, établient au jour le jour."
                     },
                     {
-                    "name": "__📓 Classe-S__",
-                    "value": "• Classe disponible sous candidature du serveur"
-                    }
-                ]
-            };
-        message.guild.channels.find("id", "462927679533088768").sendEmbed(embed)
-        } 
-        else 
-        {
-            message.channel.send('Pas la permission') 
-        }
-        break;
-        case "infoClub":
-        if (message.author.id === "213322033692409857") 
-        {
-            const embed = 
-            {
-                "description": "Voici quelques explications sur les clubs présent dans notre lycée",
-                "color": 005555,
-                "fields": 
-                [
-                    {
-                    "name": "__🗾 Otaku__",
-                    "value": "• Pour tous les Otakus"
+                    "name": "__🖨️ Gérant__",
+                    "value": "• Les Gérants sont chacuns propriétaires d'un voir plusieurs batiments. C'est eux qui organisent l'activité des nombreuses centre de loisirs que contient la Cité."
                     },
                     {
-                    "name": "__🎮 Gamer__",
-                    "value": "• Pour toutes les personnes cherchant des potes pour jouer"
+                    "name": "__📁 Secrétaire__",
+                    "value": "• Les Secrétaires sont les hommes à tout faire de la Cité. Ils servent principalement à aider le Gouvernement dans la gestion de celle-ci."
                     },
                     {
-                    "name": "__🎬 Cinéphile__",
-                    "value": "• Pour tous les mordus du 7ème Art"
+                    "name": "__📗 Elitiste__",
+                    "value": "• Les Elitistes, la définition même de la plus haute distinction possible au sein de notre peuple. Seul les membres ayant contribuer à l'évolution de la Cité peuvent espérer un jour, en faire partie (= sous-candidature des comtes)."
                     },
                     {
-                    "name": "__💻 Geek__",
-                    "value": "• Si vous êtes intéressé par les nouvelles technologie"
+                    "name": "__🔰 Comte__",
+                    "value": "• Les Comtes, ils sont la preuve vivante qu'un simple roturier peut un jour rêver d'accéder à la noblesse ce qui leurs laissent droit à certains privilèges."
                     },
                     {
-                    "name": "__🎹 Musicien__",
-                    "value": "• Venez partager vos musiques préférées, voir même vos créations"
+                    "name": "__🛠️ Bourgeois__",
+                    "value": "• Les Bourgeois composent la majeur partie de la communauté. Ils sont le ciment de toutes civilisations dont la nôtre."
                     },
                     {
-                    "name": "__🎨 Artiste__",
-                    "value": "• Vous aimez les dessins, la peinture, ce club est fait pour vous"
+                    "name": "__⚒️ Roturier__",
+                    "value": "• Vous venez de découvrir notre belle Cité ? Ne serait-ce vous pas Roturier ? Je pense que c'est bien le cas, si ça ne vous satisfait, nous vous laissons la chance de faire vos preuves."
                     },
                     {
-                    "name": "__⚽ Sportif__",
-                    "value": "• Pour les commentateurs/chroniqueurs en herbe"
-                    }
-                ]
-            };
-            message.guild.channels.find("id", "462927679533088768").sendEmbed(embed)
-        } 
-        else 
-        {
-            message.channel.send('Pas la permission') 
-        }
-        break;
-        case "infoPower":
-        if (message.author.id === "213322033692409857") 
-        {
-            const embed = 
-            {
-                "title": "__**Comité et Conseil des élèves**__",
-                "color": 004444,
-                "fields": 
-                [
-                    {
-                    "name": "__🎤 Animateur__",
-                    "value": "• Lvl 30: Coordonne les événements avec un organisateur (membre du Comité)"
+                    "name": "__🔖  Adhérents__",
+                    "value": "• Les Adhérents sont les déscendants membres d'une ancienne organisation qui se retrouve de temps en temps autour d'une boisson chaude pour discuter."
                     },
                     {
-                    "name": "__🛡️ Surveillant__",
-                    "value": "• Lvl 35: Modérateur des channels vocal/textuel (membre du Comité)"
+                    "name": "__👮‍ Prisonnier__",
+                    "value": "• Les Prisionners sont nos membres qui ont commis le plus d'infractions au sein de la communauté et qui se doivent d'être puni."
                     },
-                    {
-                    "name": "__📅 Organisateur__",
-                    "value": "• Création et coordination des événements (membre du Comité)"
-                    },
-                    {
-                    "name": "__📰 Journaliste/📁 Conseiller/💰 Trésorier/💼 Vice-président/📱 Président__",
-                    "value": "• Staff (membre officiel du Conseil)"
-                    }
                 ]
             };
             message.guild.channels.find("id", "462927679533088768").sendEmbed(embed)
@@ -329,48 +277,40 @@ bot.on("message", function(message)
             const embed = 
             {
                 "title": "__**Add-on**__",
-                "color": 006666,
-                "footer": 
-                {
-                "text": "PS: De nouveaux rôles spéciaux viendront **certainement** dans le futur"
-                },
+                "color": 0xe69500, //Ocre
                 "fields": 
                 [
                     {
                     "name": "__🍟 Belge__",
-                    "value": "• Une frite, une fois ( <#464179763498582016> ) ?"
+                    "value": "• Une frite, une fois ?"
                     },
                     {
                     "name": "__🥖 Français__",
-                    "value": "• Pour tous les Bleu, blanc, rouge ( <#464179763498582016> )"
+                    "value": "• Pour tous les Bleu, blanc, rouge"
                     },
                     {
                     "name": "__🏳️‍🌈  LGBTQ+__",
-                    "value": "• Pour tous les Bleu, blanc, rouge ( <#464179763498582016> )"
+                    "value": "• Vive les couleurs !"
                     },
                     {
                     "name": "__❤️ Love__",
-                    "value": "• Un amour en tête ( <#462923891724255243> ) ?"
+                    "value": "• Un amour en tête?"
                     },
                     {
                     "name": "__🔞 Nsfw__",
-                    "value": "• ... ( <#462923891724255243> )"
-                    },
-                    {
-                    "name": "__📐 Etudiant__",
-                    "value": "• Si vous cherchez des conseils, de l'aide pour vos études ( <#462923891724255243> )"
+                    "value": "• ..."
                     },
                     {
                     "name": "__💵 Capitaliste__",
-                    "value": "• Pognon, pognon, pognon ( <#462923863995580416> )"
+                    "value": "• Pognon, pognon, pognon"
                     },
                     {
                     "name": "__⭐ Communiste__",
-                    "value": "• Crie STALINE ( <#462923863995580416> ) !"
+                    "value": "• Crie STALINE !"
                     },
                     {
                     "name": "__👮🏻 Fasciste__",
-                    "value": "• Hail Hydra ( <#462923863995580416> ) !"
+                    "value": "• Hail Hydra !"
                     }
                 ]
             };
@@ -381,87 +321,31 @@ bot.on("message", function(message)
             message.channel.send('Pas la permission') 
         }
         break;
-        case "infoChan":
-        if (message.author.id === "213322033692409857") 
-        {
-            const embed = 
-            {
-                "description": "Explication des channels, ici",
-                "color": 80000,
-                "image": 
-                {
-                "url": "https://cdn.discordapp.com/attachments/394535366650101770/486830675480281098/Capture.PNG"
-                }
-            };
-            message.guild.channels.find("id", "462927679533088768").sendEmbed(embed)
-        } 
-        else 
-        {
-            message.channel.send('Pas la permission') 
-        }
-        break;
-        case "infoXp":
-        if (message.author.id === "213322033692409857") 
-        {
-            const embed = 
-            {
-                "title": ":arrow_right: __**Comment XP avec Hatchi ?**__",
-                "color": "000055",
-                "fields": 
-                [
-                    {
-                    "name": ":white_small_square:__Conseil 1:__",
-                    "value": "• Dès que vous postez un message, celui-ci vous donnera une valeur aléatoire en 15-25 d'xp."
-                    },
-                    {
-                    "name": ":white_small_square:__Conseil 2:__",
-                    "value": "• Pour évitez tout spam, plus le message est construit, plus il y a de chance de gagner le maximum d'xp."
-                    },
-                    {
-                    "name": ":white_small_square:__Conseil 3:__",
-                    "value": "• Pour voir votre niveau, faites **!rank** dans les channels prévus à cet effet."
-                    }
-                ]
-            };
-            message.guild.channels.find("id", "462927679533088768").sendEmbed(embed)
-        } 
-        else 
-        {
-            message.channel.send('Pas la permission') 
-        }
-        break;
+        
         case "infoHier":
         if (message.author.id === "213322033692409857") 
         {
             const embed = 
             {
-                "title": ":arrow_right: __**Hiérarchie en place au Lycée**__",
-                "color": 80000,
-                "footer": 
-                {
-                "text": "PS: La hiéarché n'inclue pas les add-on car ceux-ci n'apportent pas de permission en plus (la majorité)"
-                },
+                "title": ":arrow_right: __**Hiérarchie en place dans la Cité**__",
+                "color": 0xe69500, //Ocre
                 "fields": 
                 [
                     {
-                    "name": ":white_small_square:__Staff:__",
-                    "value": "• Président, Vice-Président, Trésorier, Conseiller et Journaliste"
+                    "name": ":white_small_square:__Gourvenement :__",
+                    "value": "• Chef de la cité, Conseiller, Boursier, Informateur et Général"
                     },
                     {
-                    "name": ":white_small_square:__Comité:__",
-                    "value": "• Responsable/Président de Club, Surveillant, Animateur"
+                    "name": ":white_small_square:__Haut Membre :__",
+                    "value": "• Gérant des magasins et Elitiste"
                     },
                     {
-                    "name": ":white_small_square:__Elite:__",
-                    "value": "• Gérant du Maid-Café et classe S"
+                    "name": ":white_small_square:__Membre :__",
+                    "value": "• Comte, Bourgeois et Roturier"
                     },
                     {
-                    "name": ":white_small_square:__Membre:__",
-                    "value": "• Maid, Classe A, classe B, classe C et classe E"
-                    },
-                    {
-                    "name": ":white_small_square:__Puni:__",
-                    "value": "• Mute/En retenue"
+                    "name": ":white_small_square:__Sous-peuple :__",
+                    "value": "• Mute/En prison"
                     }
                 ]
             };
@@ -482,7 +366,6 @@ bot.on("message", function(message)
     var args = message.content.substring(prefix.length).split(" ");
     switch (args[0].toLowerCase()) 
     {
-    
     case "poll":
     let args = message.content.split(" ").slice(1);
     let tte = args.join(" ")
@@ -490,13 +373,13 @@ bot.on("message", function(message)
     {
         message.channel.send('Rentrez une question') 
     } 
-    else if(message.author.id === "213322033692409857" || message.author.id === "316672290479931392" || message.author.id === "369914503892041730" || message.author.id === "269530258267439115" || message.author.id === "316673507922804736") 
+    else if(message.author.id === "213322033692409857" || message.author.id === "316672290479931392" || message.author.id === "335050982046040065" || message.author.id === "269530258267439115" || message.author.id === "316673507922804736") 
     {
         const embed = new Discord.RichEmbed()
         .setTitle("__**Sondage**__")
         .addField("Question: ", tte)
         .setFooter('Réagissez par ✅ ou ❌!')
-        .setColor('#000044')
+        .setColor('3447003')
             
         message.guild.channels.find("id", "480075582340595744").sendEmbed(embed)
         .then(function (message){ 
@@ -510,7 +393,7 @@ bot.on("message", function(message)
     }
     break;  
     case "say":
-    if (message.author.id === "213322033692409857" || message.author.id === "316672290479931392" || message.author.id === "369914503892041730" || message.author.id === "269530258267439115" || message.author.id === "316673507922804736") {
+    if (message.author.id === "213322033692409857" || message.author.id === "316672290479931392" || message.author.id === "335050982046040065" || message.author.id === "269530258267439115" || message.author.id === "316673507922804736") {
         let textsay = message.content.split(" ").slice(1);
         let btmsg = textsay.join(" ");
         message.delete().catch();
@@ -527,57 +410,13 @@ bot.on("message", function(message)
         message.guild.channels.find("id", "462949032226979850").sendMessage("Salutation chers élèves, je me nomme Nesturako Seijuro. Je suis professeur de programmation au lycée **Alafia**. Je suis encore à mes débuts dans ma carrière d'enseignant donc si vous avez des suggetions à faire. Faites les par mp à <@213322033692409857> , s'il vous plait ^^'");
     }
     break;
-    /*
-    case "story":
-        const embed = new Discord.RichEmbed()
-        .addField('Nom du serveur:', 'Lycée **Alafia**')
-        .addField('Signfication:', '"Paix" en Yoruba')
-        .addField('Pourquoi ?', 'Soon 😉')
-        .setColor("#000055")
-        message.channel.sendEmbed(embed)
-    break;
-    */
     case "helpop":
         message.delete().catch();
-        message.guild.channels.find("id", "462928491831230484").sendMessage(/*<@369914503892041730> , <@316672290479931392> ,*/"<@&462952083746717697> et <@&462952216064425984>: " + message.member.toString() + " à besoin d'aide !");
+        message.guild.channels.find("id", "462928491831230484").sendMessage(/*<@335050982046040065> , <@316672290479931392> ,*/"<@&462952083746717697> et <@&462952216064425984>: " + message.member.toString() + " à besoin d'aide !");
     break;
-    
     case "ping":
         message.channel.sendMessage("Temps de latence avec le serveur: `" + `${(Date.now () - message.createdTimestamp) / 100}` + "ms`");
     break;
-    case "promot":
-        message.guild.channels.find("id", "462923821801013249").sendMessage("Comment passer en classe S ? Envoyer un mp à un membre du staff suivi d'une présentation/candidature.");
-    break;
-    /*
-    case "help":
-        const embed = new Discord.RichEmbed()
-        .setDescription ("**Commandes**")
-        .addField("__Prefix__", "&")
-        .addField("__Invitation__", "invit")
-        .addField("_Besoin d'aide__", "helpop")
-        .addField("_Ping__", "ping")
-        .addField("__Information sur le serveur__ ", "serv")
-        .setColor("#000055")
-        message.channel.sendEmbed(embed)
-    break;
-    case "shelp":
-    if(message.author.id === "213322033692409857" || message.author.id === "316672290479931392" || message.author.id === "369914503892041730" || message.author.id === "269530258267439115" || message.author.id === "316673507922804736")
-    {
-        const embed = new Discord.RichEmbed()
-        .setDescription ("**Commandes Staff**")
-        .addField("__Prefix__", "&")
-        .addField("_Sondage__", "poll (question)")
-        .addField("_Nesturako__", "say (message)")
-        .addField("__Autres commandes__ ", "help")
-        .setColor("#000044")
-        message.channel.sendEmbed(embed)
-    }
-    else 
-    {
-        message.channel.send('Pas la permission') 
-    }
-    break;
-    */
     case "serv":
         const embed = new Discord.RichEmbed()
         .setDescription ("**Information du Discord**")
@@ -585,7 +424,7 @@ bot.on("message", function(message)
         .addField("Créer le ", "13 Décembre 2017")
         .addField("Tu as rejoins le ", message.member.joinedAt)
         .addField("__Utilisateur sur le discord:__ ", message.guild.memberCount)
-        .setColor("#000055")
+        .setColor("3447003")
         message.channel.sendEmbed(embed)
     }
 })
