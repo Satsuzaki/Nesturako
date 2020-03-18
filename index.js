@@ -271,13 +271,13 @@ bot.on("message", function(message)
             message.channel.send('Pas la permission') 
         }
         break;
-        case "addon":
+        case "distinct":
         if (message.author.id === "213322033692409857") 
         {
             const embed = 
             {
-                "title": "__**Add-on**__",
-                "color": 0xff7f00,
+                "title": "__**Moyens de distinctions**__",
+                "color": 0x75b79e,
                 "fields": 
                 [
                     {
@@ -314,7 +314,7 @@ bot.on("message", function(message)
                     }
                 ]
             };
-            message.guild.channels.find("id", "631395951671771149").sendEmbed(embed)
+            message.guild.channels.find("id", "689880936107606196").sendEmbed(embed)
         } 
         else 
         {
