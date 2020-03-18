@@ -321,6 +321,36 @@ bot.on("message", function(message)
             message.channel.send('Pas la permission') 
         }
         break;
+        case "gerant":
+        if (message.author.id === "213322033692409857") 
+        {
+            const embed = 
+            {
+                "title": "__**Les différents Gérants des magasins**__",
+                "color": 0xff7f00,
+                "fields": 
+                [
+                    {
+                    "name": "__Magasain Iwara (Lecture)__",
+                    "value": "• Gérant : Husinay"
+                    },
+                    {
+                    "name": "__Magasin Ogun__",
+                    "value": "• Gérant : Nishibi - Co-Gérant : Akemi"
+                    },
+                    {
+                    "name": "__Magasin Iboju__",
+                    "value": "• Gérant : Tagazocq - Co-Gérant : Satsu"
+                    }
+                ]
+            };
+            message.guild.channels.find("id", "631395951671771149").sendEmbed(embed)
+        } 
+        else 
+        {
+            message.channel.send('Pas la permission') 
+        }
+        break;
         case "hierarchie":
         if (message.author.id === "213322033692409857") 
         {
