@@ -402,20 +402,13 @@ bot.on("message", function(message)
     case "invit":
         message.channel.send('https://discord.gg/2ZHnp9T');
     break;
-    /*case "desc":
-    if (message.author.id === "213322033692409857") 
-    {
-        message.delete().catch();
-        message.guild.channels.find("id", "462949032226979850").sendMessage("Salutation chers élèves, je me nomme Nesturako Seijuro. Je suis professeur de programmation au lycée **Alafia**. Je suis encore à mes débuts dans ma carrière d'enseignant donc si vous avez des suggetions à faire. Faites les par mp à <@213322033692409857> , s'il vous plait ^^'");
-    }
-    break;
-    case "helpop":
+    /*case "helpop":
         message.delete().catch();
         message.guild.channels.find("id", "462928491831230484").sendMessage(<@335050982046040065> , <@316672290479931392> ,"<@&462952083746717697> et <@&462952216064425984>: " + message.member.toString() + " à besoin d'aide !");
     break;*/
     case "ping":
         message.channel.sendMessage("Temps de latence avec le serveur: `" + `${(Date.now () - message.createdTimestamp) / 100}` + "ms`");
-    /*break;
+    break;
     case "serv":
         const embed = new Discord.RichEmbed()
         .setDescription ("**Information du Discord**")
@@ -425,7 +418,6 @@ bot.on("message", function(message)
         .addField("__Utilisateur sur le discord:__ ", message.guild.memberCount)
         .setColor("3447003")
         message.channel.sendEmbed(embed)
-        */
     }
 })
 
