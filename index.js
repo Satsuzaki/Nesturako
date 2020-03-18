@@ -408,7 +408,7 @@ bot.on("message", function(message)
     break;*/
     case "ping":
         message.channel.sendMessage("Temps de latence avec le serveur: `" + `${(Date.now () - message.createdTimestamp) / 100}` + "ms`");
-    break;
+    /*break;
     case "serv":
         const embed = new Discord.RichEmbed()
         .setDescription ("**Information du Discord**")
@@ -417,7 +417,7 @@ bot.on("message", function(message)
         .addField("Tu as rejoins le ", message.member.joinedAt)
         .addField("__Utilisateur sur le discord:__ ", message.guild.memberCount)
         .setColor("3447003")
-        message.channel.sendEmbed(embed)
+        message.channel.sendEmbed(embed)*/
     }
 })
 
