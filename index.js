@@ -400,7 +400,7 @@ bot.on("message", function(message)
     }
     break;
     case "invit":
-        message.channel.send('https://discord.gg/9Hy94Y4');
+        message.channel.send('https://discord.gg/2ZHnp9T');
     break;
     /*case "desc":
     if (message.author.id === "213322033692409857") 
